@@ -7,8 +7,11 @@
 <body>
   <div class="console">
 
-    <div class="console-line comment">Count and output Nginx zipped access log</div>
-    <div class="console-line ">zcat /var/log/nginx/access.log-*|awk '{print $1}'|awk '{a[$0]++}END{for(i in a){print a[i],i}}'|sort -k1 -r</div>
+    <div class="console-line comment">Say there are a few lines like this in log file:   /var/log/zabbix/zabbix_server.log</div>
+    <div class="console-line comment">1061:20230605:175232.950 cannot send list of active checks to "52.162.212.244": host [AccelFilt-PDM] not found</div>
+    <div class="console-line comment">1065:20230605:182403.690 cannot send list of active checks to "20.237.248.66": host [WisprAI-PDM] not found</div>
+    <div class="console-line comment">How can I grep ALL of them:</div>
+    <div class="console-line ">grep 'host \[.*\] not found' /var/log/zabbix/zabbix_server.log</div>
     </br>
 
     <div class="console-line comment">Count and output Nginx zipped access log</div>
