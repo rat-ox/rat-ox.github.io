@@ -6,10 +6,15 @@
 </head>
 <body>
   <div class="console">
+
     <div class="console-line comment">Count and output Nginx zipped access log</div>
     <div class="console-line ">zcat /var/log/nginx/access.log-*|awk '{print $1}'|awk '{a[$0]++}END{for(i in a){print a[i],i}}'|sort -k1 -r</div>
-    <div class="console-line">Exiting...</div>
     </br>
+
+    <div class="console-line comment">Count and output Nginx zipped access log</div>
+    <div class="console-line ">zcat /var/log/nginx/access.log-*|awk '{print $1}'|awk '{a[$0]++}END{for(i in a){print a[i],i}}'|sort -k1 -r</div>
+    </br>
+
   </div>
 </body>
 </html>
