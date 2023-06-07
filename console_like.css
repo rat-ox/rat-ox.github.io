@@ -35,7 +35,7 @@ body {
   }
 
   .console-line.comment {
-    color: #0ff;
+    color: #0cc;
     display: flex;
     align-items: left;
     margin-bottom: 10px;
