@@ -7,8 +7,14 @@
 <body>
   <div class="console">
 
-    <div class="console-line comment">Connect to it with ssh right after pub key was sent::</div>
+    <div class="console-line comment">Connect to it with ssh right after pub key was sent:</div>
     <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX</div>
+    </br>
+
+    <div class="console-line comment">Required to have ~/.ssh/config has entries like these:</div>
+    <div class="console-line comment"># SSH over AWS Systems Manager Session Manager</div>
+    <div class="console-line comment">  host i-* mi-*</div>
+    <div class="console-line comment">  ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --profile=PROFILE --region=us-west-2 --parameters 'portNumber=%p'"</div>
     </br>
 
     <div class="console-line comment">Send my pubkey to AWS SSM managed server instance (needs to be sshed within 60 seconds!  Otherwise, re-send):</div>
