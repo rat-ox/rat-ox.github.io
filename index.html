@@ -7,6 +7,14 @@
 <body>
   <div class="console">
 
+    <div class="console-line comment">Connect to it with ssh right after pub key was sent::</div>
+    <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX</div>
+    </br>
+
+    <div class="console-line comment">Send my pubkey to AWS SSM managed server instance (needs to be sshed within 60 seconds!  Otherwise, re-send):</div>
+    <div class="console-line ">aws ec2-instance-connect send-ssh-public-key --profile=PROFILE --instance-id "i-XXXXXXXXXXXX" --ssh-public-key "file://id_rsa.pub" --instance-os-user=ec2-user --region "us-west-2"</div>
+    </br>
+
     <div class="console-line comment">Check specified domain to see the expiration date:</div>
     <div class="console-line ">DNS=www.hp.com;echo | openssl s_client -servername $DNS -connect $DNS:443 2>/dev/null | openssl x509 -noout -enddate | sed -e 's#notAfter=##'</div>
     </br>
