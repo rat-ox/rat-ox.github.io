@@ -7,6 +7,22 @@
 <body>
   <div class="console">
 
+    <div class="console-line comment">Check remote rpository on this local one:</div>
+    <div class="console-line ">git remote -v</div>
+    </br>
+
+    <div class="console-line comment">One line command to deploy changes to SLS(Serverless) stack:</div>
+    <div class="console-line ">sls s3sync && sls invoke -f setup</div>
+    </br>
+
+    <div class="console-line comment">One line command to do commit and push together after any changes made at local repository:</div>
+    <div class="console-line ">git add FILE_NAME/. && git commit -a -m 'ANY_COMMENT' && git push</div>
+    </br>
+
+    <div class="console-line comment">Initial a repository / update an existing repository:</div>
+    <div class="console-line ">git clone XXX.git / git pull</div>
+    </br>
+
     <div class="console-line comment">Connect to it with ssh right after pub key was sent:</div>
     <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX</div>
     </br>
