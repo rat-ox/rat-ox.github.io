@@ -29,6 +29,12 @@
     <div class="console-line ">git clone XXX.git / git pull</div>
     </br>
 
+    <div class="console-line comment">Make a ssh tunnel for postgres database access:</div>
+    <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX -L 5432:database-prod.XXXXXXXXX.us-west-2.rds.amazonaws.com:5432</div>
+    <div class="console-line comment">Connect to the database from localhost:</div>
+    <div class="console-line ">psql -h localhost -U username databasename</div>
+    </br>
+
     <div class="console-line comment">Connect to it with ssh right after pub key was sent:</div>
     <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX</div>
     </br>
