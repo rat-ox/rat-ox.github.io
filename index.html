@@ -7,6 +7,10 @@
 <body>
   <div class="console">
 
+    <div class="console-line comment">Pick one FILE randomly from ,amy files with path D0s/D1s/FILEs:</div>
+    <div class="console-line ">D0=$(ls|shuf -n1);D1=$(ls $D0/|shuf -n1);FILE=$(ls $D0/$D1/*.jpg|shuf -n1);echo $FILE</div>
+    </br>
+
     <div class="console-line comment">Change USER_ID with PASSWORD, one line command:</div>
     <div class="console-line ">USER_ID=USERID; PASSWORD=PASSWD; echo "$USER_ID:$PASSWORD"|chpasswd</div>
     </br>
