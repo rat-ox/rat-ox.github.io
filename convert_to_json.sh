@@ -11,7 +11,7 @@ while IFS=$'\t' read -r url prettyName remark; do
     remark="${remark//\"/\\\"}"
 
     # Append the JSON object to the output
-    json_output+="{'url':'$url','prettyName':'$prettyName','remark':'$remark'},"
+    json_output+="{\"url\":\"$url\",\"prettyName\":\"$prettyName\",\"remark\":\"$remark\"},"
 done < urls.data
 
 # Remove the trailing comma and close the JSON array
