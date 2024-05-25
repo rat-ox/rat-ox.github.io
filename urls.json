@@ -1,0 +1,24 @@
+{
+    "urls": [
+        {
+            "url": "https://www.w3schools.com",
+            "remark": "Great resource for learning web development."
+        },
+        {
+            "url": "https://developer.mozilla.org",
+            "remark": "Comprehensive documentation for web developers."
+        },
+        {
+            "url": "https://stackoverflow.com",
+            "remark": "Community of developers helping each other."
+        },
+        {
+            "url": "https://www.github.com",
+            "remark": "Platform for hosting and collaborating on code projects."
+        },
+        {
+            "url": "https://www.reddit.com/r/programming",
+            "remark": "A subreddit for discussing programming topics."
+        }
+    ]
+}
