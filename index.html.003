@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Console-like HTML Page</title>
+  <link rel="stylesheet" href="console_like.css">
+</head>
+<body>
+  <div class="console">
+
+    <div class="console-line comment">Pick one FILE randomly from many files with path D0s/D1s/FILEs:</div>
+    <div class="console-line ">D0=$(ls|shuf -n1);D1=$(ls $D0/|shuf -n1);FILE=$(ls $D0/$D1/*.jpg|shuf -n1);echo $FILE</div>
+    </br>
+
+    <div class="console-line comment">Change USER_ID with PASSWORD, one line command:</div>
+    <div class="console-line ">USER_ID=USERID; PASSWORD=PASSWD; echo "$USER_ID:$PASSWORD"|chpasswd</div>
+    </br>
+
+    <div class="console-line comment">Generate 12 characters long random password:</div>
+    <div class="console-line ">openssl rand -base64 12</div>
+    </br>
+
+    <div class="console-line comment">Open port 80 for IP 11.12.13.14 with iptables:</div>
+    <div class="console-line ">iptables -I INPUT -p tcp -s 11.12.13.14 --dport 80 -j ACCEPT</div>
+    <div class="console-line comment">Saved in iptable is:</div>
+    <div class="console-line comment">-A INPUT -s 11.12.13.14/32 -p tcp -m tcp --dport 80 -j ACCEPT</div>
+    </br>
+
+    <div class="console-line comment">Check remote rpository on this local one:</div>
+    <div class="console-line ">git remote -v</div>
+    </br>
+
+    <div class="console-line comment">One line command to deploy changes to SLS(Serverless) stack:</div>
+    <div class="console-line ">sls s3sync && sls invoke -f setup</div>
+    </br>
+
+    <div class="console-line comment">One line command to do commit and push together after any changes made at local repository:</div>
+    <div class="console-line ">git add FILE_NAME/. && git commit -a -m 'ANY_COMMENT' && git push</div>
+    </br>
+
+    <div class="console-line comment">Initial a repository / update an existing repository:</div>
+    <div class="console-line ">git clone XXX.git / git pull</div>
+    </br>
+
+    <div class="console-line comment">Make a ssh tunnel for postgres database access:</div>
+    <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX -L 5432:database-prod.XXXXXXXXX.us-west-2.rds.amazonaws.com:5432</div>
+    <div class="console-line comment">Connect to the database from localhost:</div>
+    <div class="console-line ">psql -h localhost -U username databasename</div>
+    </br>
+
+    <div class="console-line comment">Connect to it with ssh right after pub key was sent:</div>
+    <div class="console-line ">ssh -i id_rsa ec2-user@i-XXXXXXXXXXXX</div>
+    </br>
+
+    <div class="console-line comment">Required to have ~/.ssh/config has entries like these:</div>
+    <div class="console-line comment"># SSH over AWS Systems Manager Session Manager</div>
+    <div class="console-line comment">  host i-* mi-*</div>
+    <div class="console-line comment">  ProxyCommand sh -c "aws ssm start-session --target %h --document-name AWS-StartSSHSession --profile=PROFILE --region=us-west-2 --parameters 'portNumber=%p'"</div>
+    </br>
+
+    <div class="console-line comment">Send my pubkey to AWS SSM managed server instance (needs to be sshed within 60 seconds!  Otherwise, re-send):</div>
+    <div class="console-line ">aws ec2-instance-connect send-ssh-public-key --profile=PROFILE --instance-id "i-XXXXXXXXXXXX" --ssh-public-key "file://id_rsa.pub" --instance-os-user=ec2-user --region "us-west-2"</div>
+    </br>
+
+    <div class="console-line comment">Check specified domain to see the expiration date:</div>
+    <div class="console-line ">DNS=www.hp.com;echo | openssl s_client -servername $DNS -connect $DNS:443 2>/dev/null | openssl x509 -noout -enddate | sed -e 's#notAfter=##'</div>
+    </br>
+
+    <div class="console-line comment">Verify TXT record with dig:</div>
+    <div class="console-line ">dig TXT _D8E99F7B564DB09BE85F65861BB81679.subdomain.domain.com @8.8.8.8</div>
+    </br>
+
+    <div class="console-line comment">Say there are a few lines like this in log file:   /var/log/zabbix/zabbix_server.log</div>
+    <div class="console-line comment">1061:20230605:175232.950 cannot send list of active checks to "11.12.13.14": host [ABC] not found</div>
+    <div class="console-line comment">1065:20230605:182403.690 cannot send list of active checks to "21.22.23.24": host [XYZ] not found</div>
+    <div class="console-line comment">How can I grep ALL of them:</div>
+    <div class="console-line ">grep 'host \[.*\] not found' /var/log/zabbix/zabbix_server.log</div>
+    </br>
+
+    <div class="console-line comment">Count and output Nginx zipped access log:</div>
+    <div class="console-line ">zcat /var/log/nginx/access.log-*|awk '{print $1}'|awk '{a[$0]++}END{for(i in a){print a[i],i}}'|sort -k1 -r</div>
+    </br>
+
+  </div>
+</body>
+</html>
