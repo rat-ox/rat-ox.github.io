@@ -2,22 +2,27 @@
     "urls": [
         {
             "url": "https://www.w3schools.com",
+            "prettyName": "W3Schools",
             "remark": "Great resource for learning web development."
         },
         {
             "url": "https://developer.mozilla.org",
+            "prettyName": "MDN Web Docs",
             "remark": "Comprehensive documentation for web developers."
         },
         {
             "url": "https://stackoverflow.com",
+            "prettyName": "Stack Overflow",
             "remark": "Community of developers helping each other."
         },
         {
             "url": "https://www.github.com",
+            "prettyName": "GitHub",
             "remark": "Platform for hosting and collaborating on code projects."
         },
         {
             "url": "https://www.reddit.com/r/programming",
+            "prettyName": "Reddit Programming",
             "remark": "A subreddit for discussing programming topics."
         }
     ]

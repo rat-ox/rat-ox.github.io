@@ -9,12 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 numberCell.textContent = index + 1;
                 row.appendChild(numberCell);
                 
-                const urlCell = document.createElement('td');
+                const prettyNameCell = document.createElement('td');
                 const link = document.createElement('a');
                 link.href = urlData.url;
-                link.textContent = urlData.url;
-                urlCell.appendChild(link);
-                row.appendChild(urlCell);
+                link.textContent = urlData.prettyName;
+                prettyNameCell.appendChild(link);
+                row.appendChild(prettyNameCell);
                 
                 const remarkCell = document.createElement('td');
                 remarkCell.textContent = urlData.remark;
