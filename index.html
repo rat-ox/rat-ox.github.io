@@ -6,19 +6,21 @@
     <title>Rat-Ox's Personal Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <script src="footer.js" defer></script>
+    <script>
+        function loadNav() {
+            fetch('nav.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                });
+        }
+    </script>
 </head>
 <body>
     <header>
         <h1>Welcome to Rat-Ox's Personal Webpage</h1>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="urls.html">Useful URLs</a>
-        <a href="clock.html">Clock</a>
-    </nav>
+    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
     <section>
         <div class="content">
             <h2>Home</h2>
