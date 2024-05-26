@@ -4,24 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Rat-Ox</title>
-    <style>
-        body {
-            margin: 0; /* Remove default margin */
-            padding: 0; /* Remove default padding */
-            display: flex; /* Use flexbox for positioning */
-            justify-content: flex-start; /* Align items to the start (left) */
-            align-items: flex-start; /* Align items to the start (top) */
-            height: 100vh; /* Use 100% of viewport height */
-            width: 100vw; /* Use 100% of viewport width */
-            overflow: hidden; /* Hide overflow to prevent scrolling */
-            position: relative; /* Position relative for child positioning */
-        }
-        #canvas {
-            position: absolute; /* Position absolutely */
-            top: 0; /* Align to the top of the window */
-            left: 0; /* Align to the left of the window */
-        }
-    </style>
     <link rel="stylesheet" href="styles.css">
     <script src="footer.js" defer></script>
     <script src="loadNav.js" defer></script>
@@ -33,10 +15,12 @@
     <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
     <section>
         <div class="content">
-            <canvas id="canvas" width="299" height="299" style="background-color:#333"></canvas>
-            <script>
-                // JavaScript code for drawing the clock remains the same
 
+<canvas id="canvas" width="299" height="299"
+style="background-color:#333">
+</canvas>
+
+<script>
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 var radius = canvas.height / 2;
@@ -116,8 +100,8 @@ function drawHand(ctx, pos, length, width) {
     ctx.stroke();
     ctx.rotate(-pos);
 }
+</script>
 
-            </script>
         </div>
     </section>
     <div id="footer-placeholder"></div>
