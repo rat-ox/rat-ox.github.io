@@ -19,3 +19,15 @@ json_output="${json_output%,}]}"
 
 # Write the JSON output to the urls.json file
 echo "$json_output" > urls.json
+
+# Update the last update time stamp at the footer.html
+# Get the current date and time
+CURRENT_DATE_TIME=$(date +'%a %d %b %Y %I:%M:%S %p %Z')
+
+# Regenerate the footer.html file with the updated date and time
+cat > footer.html << EOF
+<footer>
+    <p>&copy; 2024.05 Rat-Ox. All rights reserved.</p>
+    <p>$CURRENT_DATE_TIME</p>
+</footer>
+EOF
