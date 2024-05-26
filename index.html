@@ -6,24 +6,7 @@
     <title>Rat-Ox's Personal Webpage</title>
     <link rel="stylesheet" href="styles.css">
     <script src="footer.js" defer></script>
-    <script>
-        function loadNav() {
-            fetch('nav.html')
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.text();
-                })
-                .then(data => {
-                    document.getElementById('nav-placeholder').innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Error loading nav.html:', error);
-                    document.getElementById('nav-placeholder').innerHTML = '<p>Error loading navigation menu.</p>';
-                });
-        }
-    </script>
+    <script src="loadNav.js" defer></script>
 </head>
 <body onload="loadNav()">
     <header>

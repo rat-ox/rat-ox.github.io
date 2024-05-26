@@ -1,0 +1,7 @@
+# add a new nemu
+# only these two lines need to be added:
+
+    <script src="loadNav.js" defer></script>
+
+    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
+
