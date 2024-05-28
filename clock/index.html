@@ -5,20 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clock</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="footer.js" defer></script>
-    <script src="loadNav.js" defer></script>
 </head>
+
 <body style="background-color:#333">
     <header>
         <h1>Clock</h1>
     </header>
-    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
-    <section>
-        <div class="content">
 
-<canvas id="canvas" width="299" height="299"
-style="background-color:#333">
-</canvas>
+    <canvas id="canvas" width="299" height="299"
+        style="background-color:#333">
+    </canvas>
 
 <script>
 var canvas = document.getElementById("canvas");
@@ -102,8 +98,5 @@ function drawHand(ctx, pos, length, width) {
 }
 </script>
 
-        </div>
-    </section>
-    <div id="footer-placeholder"></div>
 </body>
 </html>
