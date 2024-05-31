@@ -35,8 +35,8 @@
         <h1>读 书</h1>
     </header>
     <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
-    <section class="content">
-        <div>
+    <section>
+        <div class="content">
             <h2>读 书</h2>
             <table>
                 <thead>
