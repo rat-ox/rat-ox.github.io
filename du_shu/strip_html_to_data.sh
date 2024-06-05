@@ -12,6 +12,9 @@ input_file="$1"
 plain_text_file="${input_file%.*}.txt"
 sed 's/<[^>]*>//g' "$input_file" > "$plain_text_file"
 
+cat "$plain_text_file"
+#grep -Pv "^[\s\p{C}]*$" "$plain_text_file"
+
 # Convert plain text from GB2312 to UTF-8
 #output_file="${plain_text_file%.*}.utf8.txt"
 #iconv -c -f gb2312 -t utf-8 "$plain_text_file"
