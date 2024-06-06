@@ -11,7 +11,8 @@ body {
     box-sizing: border-box;
     height: 100vh;
     overflow: auto;
-    background-color: #cddae5;
+    background-color: #f0f8ff;
+    color: #333;
 }
 h1 {
     font-size: 2em;
@@ -31,18 +32,18 @@ li {
     margin: 0px 0;
 }
 li.odd {
-    background-color: #abc1d4;
+    background-color: #f0f8ff;
 }
 li.even {
-    background-color: #eef3f6;
+    background-color: #f2f2f2;
 }
 a {
     text-decoration: none;
-    color: #00e;
+    color: #333;
 }
 a:hover {
     color: #fff;
-    background-color: #00e;
+    background-color: #33a;
     padding: 0px;
     border-radius: 0px;
 }
