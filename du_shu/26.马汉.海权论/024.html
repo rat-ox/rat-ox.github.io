@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>译后</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>译后</h1>
+            <p>    《海权论》以军人的理性和史家的智慧，总结研究了有史以来海战的战略战术及其影响，提出了制海权决定一个国家国运兴衰的思想――此即著名的马汉主义，直接促成了德、日、俄、美诸国海军的崛起，从而以海军的“圣经”之誉，跻身于影响人类进程的十六部经典之列。</p>
+<p>该书编选自马汉的四部重要著作，力图使读者观其全豹：</p>
+<p>“海权对历史的影响”译自The Influnce of Sea Power upon History 1660-1783（Boston:Little,Brown,and Company;1918）;</p>
+<p>“欧洲的冲突”译自The Interest of America in International Conditions（Boston:Little,Brown,and Company;1910）;</p>
+<p>“亚洲的问题”译自The Problem of Asia（London:Sampson Low,Marston and Company Limited;1900）;</p>
+<p>“美国的利益”译自The Interest of America in Sea Power,Present and Future（Boston:Little,Brown,and Company;1911）。</p>
+<p>“海权对历史的影响”由萧伟中翻译，梅然校；其余部分由梅然翻译，萧伟中校。不妥之处，还望读者指正。</p>
+<p></p>
+<p>　 译者 　一九九七年于北京大学</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>
