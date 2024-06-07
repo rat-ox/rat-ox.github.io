@@ -7,12 +7,12 @@ if [ -z "$1" ]; then
 fi
 
 input_file="$1"
+sed 's/<[^>]*>//g' "$input_file"
 
 # Strip HTML tags and save as plain text
-plain_text_file="${input_file%.*}.txt"
-sed 's/<[^>]*>//g' "$input_file" > "$plain_text_file"
-
-cat "$plain_text_file"
+#plain_text_file="${input_file%.*}.txt"
+#sed 's/<[^>]*>//g' "$input_file" > "$plain_text_file"
+#cat "$plain_text_file"
 #grep -Pv "^[\s\p{C}]*$" "$plain_text_file"
 
 # Convert plain text from GB2312 to UTF-8
