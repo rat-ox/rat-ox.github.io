@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野草</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>野草</h1>
+            <p></p>
+<p>　　《野草》英文译本序</p>
+<p></p>
+<p>　　聪明人和傻子和奴才</p>
+<p></p>
+<p>　　淡淡的血痕中</p>
+<p></p>
+<p>　　风筝</p>
+<p></p>
+<p>　　复仇</p>
+<p></p>
+<p>　　复仇(其二)</p>
+<p></p>
+<p>　　狗的驳诘</p>
+<p></p>
+<p>　　过客</p>
+<p></p>
+<p>　　好的故事</p>
+<p></p>
+<p>　　腊叶</p>
+<p></p>
+<p>　　立论</p>
+<p></p>
+<p>　　墓碣文</p>
+<p></p>
+<p>　　秋夜</p>
+<p></p>
+<p>　　求乞者</p>
+<p></p>
+<p>　　失掉的好地狱</p>
+<p></p>
+<p>　　死后</p>
+<p></p>
+<p>　　死火</p>
+<p></p>
+<p>　　颓败线的颤动</p>
+<p></p>
+<p>　　我的失恋</p>
+<p></p>
+<p>　　希望</p>
+<p></p>
+<p>　　雪</p>
+<p></p>
+<p>　　一觉</p>
+<p></p>
+<p>　　影的告别</p>
+<p></p>
+<p>　　这样的战士</p>
+<p></p>
+<p>　　野草题辞</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

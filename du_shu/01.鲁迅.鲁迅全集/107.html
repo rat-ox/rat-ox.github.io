@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影的告别</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>影的告别</h1>
+            <p></p>
+<p>　　人睡到不知道时候的时候，就会有影来告别，说出那些话――</p>
+<p></p>
+<p>　　有我所不乐意的在天堂里，我不愿去；有我所不乐意的在地狱里，我不愿去；有我所不乐意的在你们将来的黄金世界里，我不愿去。</p>
+<p></p>
+<p>　　然而你就是我所不乐意的。</p>
+<p></p>
+<p>　　朋友，我不想跟随你了，我不愿住。</p>
+<p></p>
+<p>　　我不愿意！</p>
+<p></p>
+<p>　　呜乎呜乎，我不愿意，我不如彷徨于无地。</p>
+<p></p>
+<p>　　我不过一个影，要别你而沉没在黑暗里了。然而黑暗又会吞并我，然而光明</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

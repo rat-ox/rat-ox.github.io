@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>朝花夕拾</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>朝花夕拾</h1>
+            <p></p>
+<p>　　《朝花夕拾》简介：</p>
+<p></p>
+<p>　　小引</p>
+<p></p>
+<p>　　狗・猫・鼠</p>
+<p></p>
+<p>　　阿长与山海经</p>
+<p></p>
+<p>　　《二十四孝图》</p>
+<p></p>
+<p>　　五猖会</p>
+<p></p>
+<p>　　无常</p>
+<p></p>
+<p>　　从百草园到三味书屋</p>
+<p></p>
+<p>　　父亲的病</p>
+<p></p>
+<p>　　琐记</p>
+<p></p>
+<p>　　藤野先生</p>
+<p></p>
+<p>　　范爱农</p>
+<p></p>
+<p>　　后记</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

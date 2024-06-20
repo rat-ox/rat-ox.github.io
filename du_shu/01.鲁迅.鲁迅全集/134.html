@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华盖集</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>华盖集</h1>
+            <p></p>
+<p>　　题记</p>
+<p></p>
+<p>　　咬文嚼字</p>
+<p></p>
+<p>　　青年必读书</p>
+<p></p>
+<p>　　忽然想到(1)</p>
+<p></p>
+<p>　　通讯</p>
+<p></p>
+<p>　　论辩的魂灵</p>
+<p></p>
+<p>　　牺牲谟</p>
+<p></p>
+<p>　　战士和苍蝇</p>
+<p></p>
+<p>　　夏三虫</p>
+<p></p>
+<p>　　忽然想到(2)</p>
+<p></p>
+<p>　　杂感</p>
+<p></p>
+<p>　　北京通信</p>
+<p></p>
+<p>　　导师</p>
+<p></p>
+<p>　　长城</p>
+<p></p>
+<p>　　忽然想到(3)</p>
+<p></p>
+<p>　　“碰壁”之后</p>
+<p></p>
+<p>　　并非闲话</p>
+<p></p>
+<p>　　我的“籍”和“系”</p>
+<p></p>
+<p>　　咬文嚼字</p>
+<p></p>
+<p>　　忽然想到(4)</p>
+<p></p>
+<p>　　补白</p>
+<p></p>
+<p>　　答KS君</p>
+<p></p>
+<p>　　“碰壁”之余</p>
+<p></p>
+<p>　　并非闲话（二）</p>
+<p></p>
+<p>　　十四年的“读经”</p>
+<p></p>
+<p>　　评心雕龙</p>
+<p></p>
+<p>　　这个与那个</p>
+<p></p>
+<p>　　并非闲话（三）</p>
+<p></p>
+<p>　　我观北大</p>
+<p></p>
+<p>　　碎话</p>
+<p></p>
+<p>　　“公理”的把戏</p>
+<p></p>
+<p>　　这回是“多数”的把戏</p>
+<p></p>
+<p>　　后记</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

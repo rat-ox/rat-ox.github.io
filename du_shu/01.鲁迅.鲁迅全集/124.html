@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故事新编</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>故事新编</h1>
+            <p></p>
+<p>　　序言</p>
+<p></p>
+<p>　　理水</p>
+<p></p>
+<p>　　采薇</p>
+<p></p>
+<p>　　铸剑</p>
+<p></p>
+<p>　　非攻</p>
+<p></p>
+<p>　　奔月</p>
+<p></p>
+<p>　　出关</p>
+<p></p>
+<p>　　补天</p>
+<p></p>
+<p>　　起死</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

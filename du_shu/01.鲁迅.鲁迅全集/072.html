@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>彷徨</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>彷徨</h1>
+            <p></p>
+<p>　　祝福</p>
+<p></p>
+<p>　　弟兄</p>
+<p></p>
+<p>　　离婚</p>
+<p></p>
+<p>　　幸福的家庭</p>
+<p></p>
+<p>　　伤逝</p>
+<p></p>
+<p>　　长明灯</p>
+<p></p>
+<p>　　孤独者</p>
+<p></p>
+<p>　　高老夫子</p>
+<p></p>
+<p>　　示众</p>
+<p></p>
+<p>　　肥皂</p>
+<p></p>
+<p>　　在酒楼上</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

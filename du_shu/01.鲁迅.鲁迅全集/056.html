@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>呐喊</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>呐喊</h1>
+            <p></p>
+<p>　　自序</p>
+<p></p>
+<p>　　故乡</p>
+<p></p>
+<p>　　社戏</p>
+<p></p>
+<p>　　风波</p>
+<p></p>
+<p>　　狂人日记</p>
+<p></p>
+<p>　　端午节</p>
+<p></p>
+<p>　　药</p>
+<p></p>
+<p>　　明天</p>
+<p></p>
+<p>　　白光</p>
+<p></p>
+<p>　　孔乙己</p>
+<p></p>
+<p>　　头发的故事</p>
+<p></p>
+<p>　　阿Ｑ正传</p>
+<p></p>
+<p>　　兔和猫</p>
+<p></p>
+<p>　　鸭的喜剧</p>
+<p></p>
+<p>　　一件小事</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>
