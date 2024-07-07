@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>集外集</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>集外集</h1>
+            <p></p>
+<p>　　本书是作者一九三三年以前出版的杂文集中未曾编入的诗文的合集，一九三五年五月由上海群众图书公司初版。这次只抽去已编入《三闲集》的《〈近代世界短篇小说集〉小引》和译文《ＰｅｔｏCｆｉＳａ′ｎｄｏｒ的诗》两篇。《咬嚼之余》、《咬嚼未始“乏味”》、《田园思想》三篇的“备考”，系本书出版后由作者亲自抄出，原拟印入《集外集拾遗》的，现都移置本集各有关正文之后；《通讯（复霉江）》的来信则系这次抄补的；《〈奔流〉编校后记》初版时遗漏最后一则，现亦补入；所收旧体诗按写作时间的先后，在顺序上作了调整。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南京民谣〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>南京民谣〔１〕</h1>
+            <p></p>
+<p>　　大家去谒灵，强盗装正经。〔２〕静默十分钟，各自想拳经。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三一年十二月二十五日《十字街头》第二期，未署名。</p>
+<p></p>
+<p>　　〔２〕　谒灵　即谒陵。一九三一年十二月二十三日《申报》报导，参加国民党四届一中全会的中央委员于当日上午八时全体拜谒孙中山的陵墓。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

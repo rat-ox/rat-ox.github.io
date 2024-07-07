@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>桃花〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>桃花〔１〕</h1>
+            <p></p>
+<p>　　春雨过了，太阳又很好，随便走到园中。</p>
+<p></p>
+<p>　　桃花开在园西，李花开在园东。</p>
+<p></p>
+<p>　　我说，“好极了！桃花红，李花白。”</p>
+<p></p>
+<p>　　（没说，桃花不及李花白。）</p>
+<p></p>
+<p>　　桃花可是生了气，满面涨作“杨妃红”〔２〕。</p>
+<p></p>
+<p>　　好小子！真了得！竟能气红了面孔。</p>
+<p></p>
+<p>　　我的话可并没得罪你，你怎的便涨红了面孔！</p>
+<p></p>
+<p>　　唉！花有花道理，我不懂。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九一八年五月十五日《新青年》第四卷第五号，署名唐俟。</p>
+<p></p>
+<p>　　〔２〕　“杨妃红”　《开元天宝遗事・红汗》：“贵妃……每有汗出，红腻而多香，或拭之于巾帕之上，其色如桃红也。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

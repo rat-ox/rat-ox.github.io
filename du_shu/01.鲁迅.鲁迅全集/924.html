@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>给《译文》编者订正的信〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>给《译文》编者订正的信〔１〕</h1>
+            <p></p>
+<p>　　编辑先生：</p>
+<p></p>
+<p>　　有一点关于误译和误排的，请给我订正一下：</p>
+<p></p>
+<p>　　一、《译文》第二卷第一期的《表》里，我把Ｇａｎｎｏｖｅ译作“怪物”，后来觉得不妥，在单行本里，便据日本译本改作“头儿”。现在才知道都不对的，有一个朋友给我查出，说这是源出犹太的话，意思就是“偷儿”，或者译为上海通用话：</p>
+<p></p>
+<p>　　贼骨头。</p>
+<p></p>
+<p>　　二、第六期的《恋歌》里，“虽是我的宝贝”的“虽”字，是“谁”字之误。</p>
+<p></p>
+<p>　　三、同篇的一切“”字，都是“槲”字之误；也有人译作“橡”，我因为发音易与制胶皮的“橡皮树”相混，所以避而不用，却不料又因形近，和“”字相混了。</p>
+<p></p>
+<p>　　鲁迅。九月八日。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三五年九月十六日《译文》月刊终刊号（总第十三号），原题《订正》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

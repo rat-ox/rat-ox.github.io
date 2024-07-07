@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>他〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>他〔１〕</h1>
+            <p></p>
+<p>　　一</p>
+<p></p>
+<p>　　“知了”不要叫了，他在房中睡着；</p>
+<p></p>
+<p>　　“知了”叫了，刻刻心头记着。</p>
+<p></p>
+<p>　　太阳去了，“知了”住了，――还没有见他，待打门叫他，――锈铁链子系着。</p>
+<p></p>
+<p>　　二</p>
+<p></p>
+<p>　　秋风起了，</p>
+<p></p>
+<p>　　快吹开那家窗幕。</p>
+<p></p>
+<p>　　开了窗幕，会望见他的双靥。</p>
+<p></p>
+<p>　　窗幕开了，――一望全是粉墙，</p>
+<p></p>
+<p>　　白吹下许多枯叶。</p>
+<p></p>
+<p>　　三</p>
+<p></p>
+<p>　　大雪下了，扫出路寻他；</p>
+<p></p>
+<p>　　他是花一般，这里如何住得！</p>
+<p></p>
+<p>　　不如回去寻他，――阿！回来还是我家。　</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九一九年四月十五日《新青年》第六卷第四号，署名唐俟。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

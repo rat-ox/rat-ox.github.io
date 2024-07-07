@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>所闻〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>所闻〔１〕</h1>
+            <p></p>
+<p>　　华灯照宴敞豪门，娇女严装侍玉樽。</p>
+<p></p>
+<p>　　忽忆情亲焦土下，佯看罗袜掩啼痕。</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三二年十二月三十一日：“为知人写字五幅，皆自作诗。为内山夫人写云：‘华灯照宴敞豪门，……。’”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

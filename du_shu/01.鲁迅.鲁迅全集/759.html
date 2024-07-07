@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偶成〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>偶成〔１〕</h1>
+            <p></p>
+<p>　　文章如土欲何之，翘首东云惹梦思。</p>
+<p></p>
+<p>　　所恨芳林寥落甚，春兰秋菊不同时。</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三二年三月三十一日：“又为沈松泉书一幅云：‘文章如土欲何之……。’”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

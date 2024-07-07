@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“生降死不降”〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>“生降死不降”〔１〕</h1>
+            <p></p>
+<p>　　大约十五六年以前，我竟受了革命党的骗了。</p>
+<p></p>
+<p>　　他们说：非革命不可！你看，汉族怎样的不愿意做奴隶，怎样的日夜想光复，这志愿，便到现在也铭心刻骨的。试举一例罢，――他们说――汉人死了入殓的时候，都将辫子盘在顶上，像明朝制度，这叫做“生降死不降”〔２〕！</p>
+<p></p>
+<p>　　生降死不降，多少悲惨而且值得同情呵。</p>
+<p></p>
+<p>　　然而近几年来，我的迷信却破裂起来了。我看见许多讣文上的人，大抵是既未殉难，也非遗民，和清朝毫不相干的；或者倒反食过民国的“禄”。而他们一死，不是“清封朝议大夫”，便是“清封恭人”〔３〕，都到阴间三跪九叩的上朝去了。</p>
+<p></p>
+<p>　　我于是不再信革命党的话。我想：别的都是诳，只是汉人有一种“生降死不降”的怪脾气，却是真的。</p>
+<p></p>
+<p>　　五月五日</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九二一年五月六日北京《晨报副刊》“杂感”栏，署名风声。</p>
+<p></p>
+<p>　　〔２〕　“生降死不降”　这是清末宣传反清时的一种说法，如汪精卫在《民报》第一卷第一号（一九○五年十月）发表的《民族的国民》一文中说：“我民族一息尚存，此心不死。……一般国民屈于毒焰，不得自由，然风气所成，有男降女不降，生降死不降之说，女子之不易服，犹曰非其所严禁，至于殡殓死者，以本族之衣冠，使不至于不瞑，而有以见先人于地下，其节弥苦，其情尤惨矣。”</p>
+<p></p>
+<p>　　〔３〕　朝议大夫　原为清朝从四品文官的封号。恭人，原为四品官员夫人的封号。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

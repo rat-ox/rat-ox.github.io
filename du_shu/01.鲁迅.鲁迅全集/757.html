@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送增田涉君归国〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>送增田涉君归国〔１〕</h1>
+            <p></p>
+<p>　　扶桑正是秋光好，枫叶如丹照嫩寒。〔２〕</p>
+<p></p>
+<p>　　却折垂杨送归客，心随东棹忆华年。</p>
+<p></p>
+<p>　　十二月二日</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三一年十二月二日：“作送增田涉君归国诗一首并写讫，诗云：‘扶桑正是秋光好，……。’”</p>
+<p></p>
+<p>　　增田涉（１９０３―１９７７），日本的中国文学研究者，曾任日本根岛大学、关西大学等校教授。一九三一年他在上海时，常向鲁迅请教翻译《中国小说史略》等方面的问题。著有《中国文学史研究》、《鲁迅的印象》等。</p>
+<p></p>
+<p>　　〔２〕　扶桑　日本的别称。据《南史・东夷传》：“扶桑在大汉国东二万余里。”旧时我国常以“扶桑”指称日本。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

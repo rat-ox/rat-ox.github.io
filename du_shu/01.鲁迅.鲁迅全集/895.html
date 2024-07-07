@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>周豫才告白〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>周豫才告白〔１〕</h1>
+            <p></p>
+<p>　　仆已辞去山会师范学校〔２〕校长。校内诸事业于本月十三日由学务科派科员朱君幼溪至校交代清楚。凡关于该校事务，以后均希向民事署学务科接洽，仆不更负责任。此白。</p>
+<p></p>
+<p>　　〔１〕　本篇最初刊于一九一二年二月十九日《越铎日报》广告栏，原无标点。</p>
+<p></p>
+<p>　　〔２〕　山会师范学校　原名山会初级师范学堂，一九一二年一月改称绍兴师范学校。山会，山阴、会稽二县的简称。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

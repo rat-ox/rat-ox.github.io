@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>`田诚一墓记</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>`田诚一墓记</h1>
+            <p></p>
+<p>　　君以一九三○年三月至沪，出纳图书，既勤且谨，兼修绘事，斐然有成。中遭艰巨，笃行靡改，扶危济急，公私两全。越三三年七月，因病归国休养，方期再造，展其英才，而药石无灵，终以不起，年仅二十有八。呜呼，昊天难测，蕙荃早摧，晔晔青春，永门必玄壤，忝居友列，衔哀记焉。</p>
+<p></p>
+<p>　　一九三五年四月二十二日，会稽鲁迅撰。</p>
+<p></p>
+<p>　　〔１〕本篇在收入本书前未在报刊上发表过。</p>
+<p></p>
+<p>　　`田诚一（１９０５―１９３４），日本人，内山书店职员。参看本书《后记》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

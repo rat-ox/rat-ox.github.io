@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>通讯〔１〕（复吕蕴儒）</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>通讯〔１〕（复吕蕴儒）</h1>
+            <p></p>
+<p>　　蕴儒〔２〕兄：</p>
+<p></p>
+<p>　　得到来信了。我极快慰于开封将有许多骂人的嘴张开来，并且祝你们“打将前去”的胜利。</p>
+<p></p>
+<p>　　我想，骂人是中国极普通的事，可惜大家只知道骂而没有知道何以该骂，谁该骂，所以不行。现在我们须得指出其可骂之道，而又继之以骂。那么，就很有意思了，于是就可以由骂而生出骂以上的事情来的罢。</p>
+<p></p>
+<p>　　（下略。）</p>
+<p></p>
+<p>　　迅〔四月二十三日〕</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九二五年五月六日《豫报》副刊。</p>
+<p></p>
+<p>　　〔２〕　蕴儒　吕蕴儒，名琦，河南人。鲁迅在北京世界语专门学校任教时的学生。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

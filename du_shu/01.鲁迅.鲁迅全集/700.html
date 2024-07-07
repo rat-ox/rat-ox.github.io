@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>集外集拾遗</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>集外集拾遗</h1>
+            <p></p>
+<p>　　本书书名系由作者拟定，但未编完即因病中止，一九三八年出版《鲁迅全集》时由许广平编定印入。这次抽去译文《高尚生活》、《无礼与非礼》、《察拉图斯忒拉的序言》三篇和《〈忽然想到〉附记》（已录入《华盖集・忽然想到》注文）；《咬嚼之余》、《咬嚼未始“乏味”》、《田园思想》三篇的“备考”和《编完写起》一则已移置《集外集》有关文章之后；《〈域外小说集〉序言》已移入《译文序跋集》；《教授杂咏》的第四首系这次补入；若干诗文则按写作时同的先后，在顺序上作了调整。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

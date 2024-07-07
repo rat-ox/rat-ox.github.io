@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题〔１〕</h1>
+            <p></p>
+<p>　　大野多钩棘，长天列战云。</p>
+<p></p>
+<p>　　几家春袅袅，万籁静爸爸。</p>
+<p></p>
+<p>　　下土惟秦醉，中流辍越吟。〔２〕</p>
+<p></p>
+<p>　　风波一浩荡，花树已萧森。</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三一年八月十日《文艺新闻》第二十二号。参看本卷第１４３页注〔１〕。据《鲁迅日记》一九三一年三月五日，本诗是书赠日本友人片山松藻（内山嘉吉夫人）的。</p>
+<p></p>
+<p>　　〔２〕　秦醉　汉代张衡《西京赋》：“昔者大帝说（悦）秦穆公而觐之，飨以钧天广乐，帝有醉焉。乃为金策，锡（赐）用此土，而剪诸鹑首。”按鹑首，星次名，我国古代将星宿分为十二次，配属于各国，鹑首指秦国疆土。越吟，《史记・张仪列传》：“陈轸适至，秦惠王曰：‘子去寡人之楚，亦思寡人不？’陈轸对曰：‘王闻夫越人庄舄乎？’王曰：‘不闻。’曰：‘越人庄舄仕楚执，有顷而病。楚王曰：‘舄故越之鄙细人也，今仕楚执，贵富矣，亦思越不？’中谢对曰：‘凡人之思故，在其病也。彼思越则越声，不思越则楚声。’使人往听之，犹尚越声也。今臣虽弃逐之楚，岂能无秦声哉。’”王粲《登楼赋》：“钟仪幽而楚奏兮，庄舄显而越吟；人情同于怀土兮，岂穷达而异心。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

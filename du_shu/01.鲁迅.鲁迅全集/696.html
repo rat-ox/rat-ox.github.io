@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>悼丁君〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>悼丁君〔１〕</h1>
+            <p></p>
+<p>　　如磐夜气压重楼，剪柳春风导九秋。〔２〕</p>
+<p></p>
+<p>　　瑶瑟凝尘清怨绝，可怜无女耀高丘。</p>
+<p></p>
+<p>　　六月</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三三年九月三十日《涛声》周刊第二卷第三十八期。据《鲁迅日记》一九三三年六月二十八日，本诗是书赠陶轩的；诗中“夜气”作“遥夜”，“压”作“拥”，“瑶”作“湘”。</p>
+<p></p>
+<p>　　丁君　指丁玲，原名蒋冰之，湖南临澧人，作家。著有短篇小说集《在黑暗中》、中篇小说《水》等。一九三三年五月十四日在上海被捕，六月间盛传她在南京遇害，鲁迅因作本诗。</p>
+<p></p>
+<p>　　〔２〕　剪柳春风　唐代贺知章《咏柳》：“不知细叶谁裁出，二月春风似剪刀。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

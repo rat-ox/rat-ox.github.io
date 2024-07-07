@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题《呐喊》〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>题《呐喊》〔１〕</h1>
+            <p></p>
+<p>　　弄文罹文网，抗世违世情。</p>
+<p></p>
+<p>　　积毁可销骨，空留纸上声。〔２〕</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三三年三月二日：“山县氏索小说并题诗，于夜写二册赠之。《呐喊》云：‘弄文罹文网，……。’”</p>
+<p></p>
+<p>　　〔２〕　积毁可销骨　语出《史记・张仪列传》：“众口铄金，积毁销骨。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

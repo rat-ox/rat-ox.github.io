@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题《外套》〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>题《外套》〔１〕</h1>
+            <p></p>
+<p>　　此素园病重时特装相赠者，岂自以为将去此世耶，悲夫！</p>
+<p></p>
+<p>　　越二年余，发箧见此，追记之。三十二年四月三十日，迅。</p>
+<p></p>
+<p>　　〔１〕　本篇据手迹编入，原无标题。</p>
+<p></p>
+<p>　　《外套》，俄国作家果戈理的中篇小说，韦素园译。一九二六年九月未名社出版，为《未名丛刊》之一。一九二九年七月韦素园以布面精装本一册寄赠鲁迅。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鲁迅启事〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>鲁迅启事〔１〕</h1>
+            <p></p>
+<p>　　《民众文艺》稿件，有一部份经我看过，已在第十四期声明。现因自己事繁，无暇细读，并将一部份的“校阅”，亦已停止，自第十七期起，即不负任何责任。</p>
+<p></p>
+<p>　　四月十四日。</p>
+<p></p>
+<p>　　〔１〕　本篇最初刊于一九二五年四月十七日《京报副刊》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>［附］关于汪辑本《谢承后汉书》〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>［附］关于汪辑本《谢承后汉书》〔1〕</h1>
+            <p></p>
+<p>　　谢承《后汉书》八卷，谢沈《后汉书》一卷，黟人汪文台南士辑，并在《七家〈后汉书〉》中，有太平崔国榜〔2〕序，其略云：“康熙中，钱唐姚鲁斯辑《东观汉记》以下诸家书为补逸，颇沿明儒陋习，不详所自，遗陋滋多。孙颐谷侍御曾据其本为谢承书补正，未有成书。近甘泉黄右原比部亦有辑本，视姚氏差详，终不赅备。黟汪先生南士，绩学敦行，著书等身，以稽古余力，重为L补；先生之友汤君伯，称先生旧藏姚本，随见条记，丹黄殆，复虑未尽，以属弟子汪学性鲆妗Ｑ夂螅厥榫∈塾谌耍谰醇吮荆讯嗤崖洹Ｘ绞致家还曰瓜壬游Ｎ铋菏椋徒遥晟峄游嘁虻眉鞘椤韵壬荨侗碧檬槌罚酥焓锨辈商帽荆庠弧洞筇评嘁氛咭玻榍仆羰险耒蔡谩Ｐ劣下液螅羰喜厥榫∩阒猩杏行幢荆锸弦背巧焦菸铮蠊槌吕剂诖罅罴遥噱髦钏希对诿鲋校薮模烊盏弥笨尚故酢痹啤Ｋ耆勺酉陌嗽逃克亍镀呒液蠛菏椤沸闯觯醵帐迹迦毡稀</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇据手稿编入，写于一九一二年八月。原无标题、标点。</p>
+<p></p>
+<p>　　〔2〕崔国榜　清代太平（今属安徽）人，曾任建昌知府。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>
