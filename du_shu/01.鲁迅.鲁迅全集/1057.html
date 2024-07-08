@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《自己发见的欢喜》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《自己发见的欢喜》译者附记〔1〕</h1>
+            <p></p>
+<p>　　波特莱尔〔2〕的散文诗，在原书上本有日文译；但我用　Max　Bruno〔3〕德文译一比较，却颇有几处不同。现在姑且参酌两本，译成中文。倘有那一位据原文给我痛加订正的，是极希望，极感激的事。否则，我将来还想去寻一个懂法文的朋友来修改他；但现在暂且这样的敷衍着。</p>
+<p></p>
+<p>　　十月一日，译者附记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《自己发见的欢喜》（原书第二部分之第二节）的译文，最初发表于一九二四年十月二十六日《晨报副镌》，后未印入单行本。</p>
+<p></p>
+<p>　　〔2〕波特莱尔（C．Baudelaire，1821―1867）　法国颓废派诗人。著有诗集《恶之华》等。这里说的“散文诗”，指他的一首题为《窗户》的小诗。</p>
+<p></p>
+<p>　　〔3〕Max　Bruno　麦克思・布鲁诺。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

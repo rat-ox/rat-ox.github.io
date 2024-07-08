@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吊卢骚</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>吊卢骚</h1>
+            <p></p>
+<p>　　（１９２８年）</p>
+<p></p>
+<p>　　脱帽怀铅出①，先生盖代穷。</p>
+<p></p>
+<p>　　头颅行万里，失计造儿童。</p>
+<p></p>
+<p>　　四月十日</p>
+<p></p>
+<p>　　这首见于《三闲集・头》，是模仿清朝王士祯《咏史小乐府》里吊袁绍的诗而作，讽刺梁实秋的攻击卢骚。原文说：“记得《三国志演义》记袁术（当作袁绍）死后，后人有诗叹道：‘长揖横刀出，将军盖代雄，头　　颅行万里，失计杀田丰。’当三个有闲之暇，也活剥一首来吊卢骚。”</p>
+<p></p>
+<p>　　①脱帽：清末有所谓卢骚帽，作者因此联想到脱帽。怀铅：犹言带着笔。铅为我国古代书写工具，《西京杂记》称扬雄“怀铅提椠”，到处搜求方言。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

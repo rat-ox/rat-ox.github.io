@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赠人二首</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>赠人二首</h1>
+            <p></p>
+<p>　　（１９３３年）　</p>
+<p></p>
+<p>　　明眸越女罢晨妆，荇水荷风是旧乡。</p>
+<p></p>
+<p>　　唱尽新词欢不见①，早云如火扑晴江。</p>
+<p></p>
+<p>　　秦女端容理玉筝，梁尘踊跃夜风轻②。</p>
+<p></p>
+<p>　　须臾响急冰弦绝，但见奔星劲有声。</p>
+<p></p>
+<p>　　七月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３３年８月２１日：“午后为森本清八君写诗一幅，云：明眸越女罢晨妆（略）。又一幅云：秦女端容理玉筝（略）。”诗中“理”作“弄”，“但”作“独”，“经”作“动”。</p>
+<p></p>
+<p>　　①刘禹锡《踏歌词四首》之一：“春江月出大堤平，堤上女郎连袂行。唱尽新词欢不见，红霞映树鹧鸪鸣。”</p>
+<p></p>
+<p>　　②《太平御览》卷５７２引《刘向别录》：“汉兴以来，善歌者鲁人虞公，发声清 哀，盖动梁尘。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

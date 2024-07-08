@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《父亲在亚美利加》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《父亲在亚美利加》译者附记〔1〕</h1>
+            <p></p>
+<p>　　芬阑和我们向来很疏远；但他自从脱离俄国和瑞典的势力之后，却是一个安静而进步的国家，文学和艺术也很发达。</p>
+<p></p>
+<p>　　他们的文学家，有用瑞典语著作的，有用芬阑语著作的，近来多属于后者了，这亚勒吉阿（Arkio）便是其一。</p>
+<p></p>
+<p>　　亚勒吉阿是他的假名，本名菲兰兑尔（Alexander　Fila－nder），是一处小地方的商人，没有受过学校教育，但他用了自修工夫，竟达到很高的程度，在本乡很受尊重，而且是极有功于青年教育的。</p>
+<p></p>
+<p>　　他的小说，于性格及心理描写都很妙。这却只是一篇小品（Skizze），是从勃劳绥惠德尔〔2〕所编的《在他的诗和他的诗人的影象里的芬阑》中译出的。编者批评说：亚勒吉阿尤有一种优美的讥讽的诙谐，用了深沉的微笑盖在物事上，而在这光中，自然能理会出悲惨来，如小说《父亲在亚美利加》所证明的便是。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇最初连同《父亲在亚美利加》的译文，发表于一九二一年七月十七、十八日北京《晨报》副刊，后收入《现代小说译丛》第一集。</p>
+<p></p>
+<p>　　〔2〕勃劳绥惠德尔（E．Brausewetter）　德国评论家。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

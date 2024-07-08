@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一・二八战后作</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>一・二八战后作</h1>
+            <p></p>
+<p>　　（１９３２年）</p>
+<p></p>
+<p>　　战云暂敛残春在，重炮清歌两寂然。</p>
+<p></p>
+<p>　　我亦无诗送归棹，但从心底祝平安。</p>
+<p></p>
+<p>　　七月十一日</p>
+<p></p>
+<p>　　《鲁迅日记》１９３２年７月１１日：“午后为山本初枝女士书一笺云：（略）。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

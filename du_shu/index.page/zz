@@ -1,0 +1,16 @@
+# make index.html
+head index.data
+鲁迅全集
+作者：鲁迅
+ 📚  坟
+ 题记①
+ 科学史教篇
+ 摩罗诗力说
+ 宋民间之所谓小说及其后来
+ 文化偏至论
+... ...
+generate_index.sh
+
+
+# normal page process:
+P=1192 ;nano -w $P;../process_paragraphs.sh $P;../generate_page.sh $P.data

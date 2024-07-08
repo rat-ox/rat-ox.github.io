@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《洞窟》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《洞窟》译者附记〔1〕</h1>
+            <p></p>
+<p>　　俄国十月革命后饥荒情形的描写，中国所译的已有好几篇了。但描写寒冷之苦的小说，却尚不多见。萨弥亚丁（Evgenü　Samiatin）〔2〕是革命前就已出名的作家，这一篇巧妙地写出人民因饥寒而复归于原始生活的状态。为了几块柴，上流的智识者至于人格分裂，实行偷窃，然而这还是暂时的事，终于将毒药当作宝贝，以自杀为唯一的出路。――但在生活于温带地方的读者，恐怕所受的感印是没有怎么深切的。</p>
+<p></p>
+<p>　　一九三○年七月十八日，译讫记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《洞窟》的译文，最初发表于一九三一年一月十日《东方杂志》第二十八卷第一号译者署名隋洛文。后未印入单行本。</p>
+<p></p>
+<p>　　〔2〕萨弥亚丁　即札弥亚丁。参看本卷第348页注〔3〕。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

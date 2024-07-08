@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阻郁达夫移家杭州</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>阻郁达夫移家杭州</h1>
+            <p></p>
+<p>　　（１９３３年）　</p>
+<p></p>
+<p>　　钱王登假仍如在①，伍相随波不可寻②。</p>
+<p></p>
+<p>　　平楚日和憎健翮③，小山香满蔽高岑。</p>
+<p></p>
+<p>　　坟坛冷落将军岳④，梅鹤凄凉处士林⑤。</p>
+<p></p>
+<p>　　何似举家游旷远，风波浩荡足行吟⑥。</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　郁达夫于１９３３年从上海迁居杭州。后来他在《回忆鲁迅》中说：“这诗的意思，他（鲁迅）曾同我说过，指的是杭州党政诸人的无理高压。”</p>
+<p></p>
+<p>　　①钱王，即五代时吴越的国王钱□（“谬”换金旁），宋朝郑文宝《江表志》：“两浙钱氏，偏霸一方，急征苛惨，科赋凡欠一斗者多至徒罪。”登假：《礼记・曲礼》：“告丧，曰天王登假。”郑玄注：“登，上也；假，已也；上己者，皆仙去云耳。”</p>
+<p></p>
+<p>　　②伍相，即伍子胥，为吴王夫差所杀，尸体被装进皮贷，投入江中。《临安志》称潮来时有人看见伍子胥“乘素车白马在潮头。”</p>
+<p></p>
+<p>　　③平楚：即平林。楚指树林。齐谢［月兆］《宣城郡内登望》诗：“寒城一以眺，平楚正苍然。”</p>
+<p></p>
+<p>　　④指杭州西湖旁岳坟。</p>
+<p></p>
+<p>　　⑤指宋代诗人林逋，杭州西湖孤山留有他的坟墓、鹤冢和放鹤亭。</p>
+<p></p>
+<p>　　⑥《楚辞・渔父》：“屈原既放，游于江潭，行吟泽畔。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

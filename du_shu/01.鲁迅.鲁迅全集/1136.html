@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>别诸弟三首――庚子二月</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>别诸弟三首――庚子二月</h1>
+            <p></p>
+<p>　　（１９００年）</p>
+<p></p>
+<p>　　谋生无奈日奔驰，有弟偏教各别离。</p>
+<p></p>
+<p>　　最是令人凄绝处，孤檠长夜雨来时。</p>
+<p></p>
+<p>　　还家未久又离家，日暮新愁分外加。</p>
+<p></p>
+<p>　　夹道万株杨柳树，望中都化断肠花。①</p>
+<p></p>
+<p>　　从来一别又经年，万里长风送客船。</p>
+<p></p>
+<p>　　我有一言应记取：文章得失不由天。</p>
+<p></p>
+<p>　　①断肠花：《广群芳谱》卷三十六秋海棠，引《采兰杂志》：“昔有妇人怀人不见，恒洒泪于北墙之下。后洒处生草，其花甚媚，色如妇面，其叶正绿反红，秋开，名曰断肠花，即今秋海棠也。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

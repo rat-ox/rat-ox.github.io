@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题二首</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题二首</h1>
+            <p></p>
+<p>　　（１９３２年）</p>
+<p></p>
+<p>　　故乡黯黯锁玄云，遥夜迢迢隔上春。</p>
+<p></p>
+<p>　　岁暮何堪再惆怅，且持卮酒食河豚①。</p>
+<p></p>
+<p>　　皓齿吴娃唱柳枝，酒阑人静暮春时。</p>
+<p></p>
+<p>　　无端旧梦驱残醉，独对灯阴忆子规。</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３２年１２月３１日：“为滨之上学士云：故乡黯黯锁玄云（下略）。为坪井学士云：皓齿吴娃唱柳枝（下略）。”两人都是日本在上海开设的［竹条］崎医院里的医生。</p>
+<p></p>
+<p>　　①《鲁迅日记》１９３２年１２月２８日：“晚，坪井先生邀至日本饭馆吃河豚，同去并有滨之上医士。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

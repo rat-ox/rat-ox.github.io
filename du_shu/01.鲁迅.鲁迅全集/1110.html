@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《人性的天才――迦尔洵》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《人性的天才――迦尔洵》译者附记〔1〕</h1>
+            <p></p>
+<p>　　Lvov―Rogachevski〔2〕的《俄国文学史梗概》的写法，每篇常有些不同，如这一篇，真不过是一幅Sketch〔3〕，然而非常简明扼要。</p>
+<p></p>
+<p>　　这回先译这一篇，也并无深意。无非因为其中所提起的迦尔洵的作品，有些是廿余年前已经绍介（《四日》，《邂逅》），有的是五六年前已经绍介（《红花》）〔4〕，读者可以更易了然，不至于但有评论而无译出的作品以资参观，只在暗中摸索。</p>
+<p></p>
+<p>　　然而不消说，迦尔洵也只是文学史上一个环，不观全局，还是不能十分明白的，――这缺憾，是待将来再弥补罢。</p>
+<p></p>
+<p>　　一九二九年八月三十日，译者附记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《人性的天才――迦尔洵》的译文，最初发表于一九二九年九月《春潮》月刊第一卷第九期。</p>
+<p></p>
+<p>　　〔2〕Lvov－Rogachevski　罗迦契夫斯基（B．K．C．_TbNhIJX]PZ，1874―1930），苏联文学批评家。《俄国文学史梗概》，即《最近俄国文学史略》，一九二○年印行。《人性的天才――迦尔洵》是该书中的一篇。</p>
+<p></p>
+<p>　　〔3〕Sketch　英语：速写、素描。</p>
+<p></p>
+<p>　　〔4〕《四日》、《邂逅》　短篇小说，前者系鲁迅译，后者系周作人译，一九○九年印入日本东京出版的《域外小说集》。《红花》，短篇小说，后来有梁遇者译本（英汉对照本），上海北新书局印行。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

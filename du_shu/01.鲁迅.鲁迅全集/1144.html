@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>替豆萁伸冤</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>替豆萁伸冤</h1>
+            <p></p>
+<p>　　（１９２５年）</p>
+<p></p>
+<p>　　煮豆燃豆萁，萁在釜下泣。</p>
+<p></p>
+<p>　　我烬你熟了，正好办教席。</p>
+<p></p>
+<p>　　六月五日</p>
+<p></p>
+<p>　　这首见于《华盖集・咬文嚼字（三）》。原文说：“据考据家说，曹子建的《七步诗》是假的。但也没有什么大相干，姑且利用它来活剥一首，替豆萁伸冤。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

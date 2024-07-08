@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>梦</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>梦</h1>
+            <p></p>
+<p>　　很多的梦，趁黄昏起哄。</p>
+<p></p>
+<p>　　前梦才挤却大前梦时，后梦又赶走了前梦。</p>
+<p></p>
+<p>　　去的前梦黑如墨，在的后梦墨一般黑；</p>
+<p></p>
+<p>　　去的在的仿佛都说：“看我真好颜色”；</p>
+<p></p>
+<p>　　颜色许好，暗里不知；</p>
+<p></p>
+<p>　　而且不知道，说话的是谁？</p>
+<p></p>
+<p>　　暗里不知，身热头痛。</p>
+<p></p>
+<p>　　你来你来！明日的梦。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

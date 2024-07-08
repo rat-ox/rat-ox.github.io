@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答客诮</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>答客诮</h1>
+            <p></p>
+<p>　　（１９３１年）</p>
+<p></p>
+<p>　　无情未必真豪杰，怜子如何不丈夫①？</p>
+<p></p>
+<p>　　知否兴风狂啸者，回眸时看小於菟②。</p>
+<p></p>
+<p>　　《鲁迅书简补遗》有这首诗，末题“未年之冬戏作，录请坪井先生哂正，鲁迅。”坪井是上海的日本［竹条］崎医院的医生，曾给鲁迅的儿子海婴治痢疾。</p>
+<p></p>
+<p>　　①《战国策・赵策》触□（上“龙”下“言”）说赵太后，触把自己的小儿子托给太后，要太后给他一个王宫卫对的职位。太后说：“丈夫亦爱怜其少子乎？”</p>
+<p></p>
+<p>　　②《易・乾・文言》：“风从虎。”《左传》宣公四年：“楚人……谓虎於菟。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

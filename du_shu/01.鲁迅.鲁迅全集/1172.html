@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题</h1>
+            <p></p>
+<p>　　（１９３３年）　</p>
+<p></p>
+<p>　　禹域多飞将①，蜗庐剩逸民。</p>
+<p></p>
+<p>　　夜邀潭底影②，玄酒颂皇仁③。</p>
+<p></p>
+<p>　　六月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３３年６月２８日：“下午为萍荪书一幅云：（略）”黄萍荪为国民党走卒，当时一面在小报上诽谤鲁迅，一面又托郁达夫向鲁迅求字。</p>
+<p></p>
+<p>　　①飞将：《史记・李广传》里记匈奴称李广为飞将军，这里指国民党的空军。</p>
+<p></p>
+<p>　　②贾岛《送无可上人》：“独行潭底影，数息树边身。”</p>
+<p></p>
+<p>　　③《礼・礼运》：“玄酒在室。”疏：“玄酒，谓水也，以其色黑谓之玄。而太古无酒，此水当酒所用，故谓之玄酒。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>狗的驳诘</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>狗的驳诘</h1>
+            <p></p>
+<p>　　我梦见自己在隘巷中行走，衣履破碎，像乞食者。</p>
+<p></p>
+<p>　　一条狗在背后叫起来了。</p>
+<p></p>
+<p>　　我傲慢地回顾，叱吒说：</p>
+<p></p>
+<p>　　‘呔！住口！你这势利的狗！’</p>
+<p></p>
+<p>　　‘嘻嘻！’他笑了，还接着说‘不敢，愧不如人呢。’</p>
+<p></p>
+<p>　　‘什么！’我气愤了，觉得这是一个极端的侮辱。</p>
+<p></p>
+<p>　　‘我惭愧：我终于还不知道分别铜和银；还不知道分别布和绸；还不知道分别官和民；还不知道分别主和奴；还不知道……。’</p>
+<p></p>
+<p>　　我逃走了。</p>
+<p></p>
+<p>　　‘且慢！我们再谈谈……。’他在后面大声挽留。</p>
+<p></p>
+<p>　　我一径逃走，尽力地走，直到逃出梦境，躺在自己的床上。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

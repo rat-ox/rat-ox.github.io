@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《文艺鉴赏的四阶段》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《文艺鉴赏的四阶段》译者附记〔1〕</h1>
+            <p></p>
+<p>　　先前我想省略的，是这一节中的几处，现在却仍然完全译出，所以序文〔2〕上说过的“别一必要”，并未实行，因为译到这里时，那必要已经不成为必要了。十月四日，译者附记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《文艺鉴赏的四阶段》（原书第二部分之第五节）的译文，最初发表于一九二四年十月三十日《晨报副镌》，后未印入单行本。</p>
+<p></p>
+<p>　　〔2〕序文　指《译〈苦闷的象征〉后三日序》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

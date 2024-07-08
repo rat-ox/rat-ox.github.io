@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>偶成</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>偶成</h1>
+            <p></p>
+<p>　　（１９３２年）</p>
+<p></p>
+<p>　　文章如土欲何之？翘首东云惹梦思。</p>
+<p></p>
+<p>　　所恨芳林寥落甚，春兰秋菊不同时。①</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３２年３月３１日：“午后……又为沈松泉书一幅云：（略）。”</p>
+<p></p>
+<p>　　①《楚辞・九歌・礼魂》：“春兰兮秋菊，长无绝兮终古。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

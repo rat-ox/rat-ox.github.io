@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>教授杂咏四首</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>教授杂咏四首</h1>
+            <p></p>
+<p>　　（１９３２年）</p>
+<p></p>
+<p>　　作法不自毙，悠然过四十。</p>
+<p></p>
+<p>　　何妨赌肥头，抵挡辩证法①。</p>
+<p></p>
+<p>　　可怜织女星，化为马郎妇。</p>
+<p></p>
+<p>　　乌鹊疑不来，迢迢牛奶路②。</p>
+<p></p>
+<p>　　世界有文学，少女多丰臀③。</p>
+<p></p>
+<p>　　鸡汤代猪肉，北新遂掩门④。</p>
+<p></p>
+<p>　　名人选小说，入线云有限。</p>
+<p></p>
+<p>　　虽有望远镜，无奈近视眼⑤。</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　①钱玄同平日曾经戏说“四十岁以上的人都应该枪毙”，又据说他在北京大学曾说过“头可断，辩证法不可开课。”</p>
+<p></p>
+<p>　　②主张“顺译”的赵景深曾经误译milky way为“牛奶路”，参看鲁迅《二心集・风马牛》。</p>
+<p></p>
+<p>　　③章衣萍《枕上随笔》：“懒人的春天哪！我连女人的屁股都懒得去摸了！”</p>
+<p></p>
+<p>　　④上海北新书局曾请章衣萍等编世界文学译本，并出儿童读物，销路很广，编辑们就大喝鸡汤。不料有一本儿童读物《小八戒》中以猪肉问题触犯了回教团体，引起诉讼，北新书局一度被封闭，后改名青光书店才得继续营业。</p>
+<p></p>
+<p>　　⑤谢六逸曾编选《模范小说选》，选录鲁迅、茅盾、叶绍钧、冰心、郁达夫五人的作品，于１９３３年３月由上海黎明书局出版，序言说准备别的作家骂他近视眼：“其实我的眼睛何尝近视，我也曾用过千里镜在沙漠地带，向各方面眺望了一下。国内的作家无论如何不只这五个，这是千真万确的事实。不过在我所做的是‘匠人’的工作，匠人选择材料时，必要顾到能不能上得自己的‘墨线’，所以我要‘唐突’他们的作品一下了。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>报载患脑炎戏作</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>报载患脑炎戏作</h1>
+            <p></p>
+<p>　　（１９３４年）　</p>
+<p></p>
+<p>　　横眉岂夺蛾眉冶，不料仍违众女心①。</p>
+<p></p>
+<p>　　诅咒而今翻异样，无如臣脑故如冰。</p>
+<p></p>
+<p>　　三月十六日</p>
+<p></p>
+<p>　　《鲁迅日记》１９３４年３月１６日：“闻天津《大公报》记我患脑炎，戏作一绝，寄静农……”</p>
+<p></p>
+<p>　　①屈原《离骚》：“众女嫉余之蛾眉兮，谣诼谓余以善淫。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>
