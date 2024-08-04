@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    font-family: BeiAn-Kai, Arial, sans-serif;
+    font-family: ToneOZ-Pinyin-Kai-Simplified, BeiAn-Kai, Arial, sans-serif;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -63,8 +63,8 @@ a:hover {
     white-space: pre-wrap;
 }
 .content p {
-    text-indent: 4em;
-    margin: 0 0 1em;
+    text-indent: 0em;
+    margin: 0 0 0em;
 }
 .column-option {
     margin-bottom: 50px;
