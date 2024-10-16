@@ -6,7 +6,7 @@
     <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
 
 # normal operation:
-cd /opt/github/rat-ox/rat-ox.github.io
+cd /opt/repos/rat-ox.github.io
 git status
 ./convert_du_shu.sh
 cat footer.html
