@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序言</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>序言</h1>
+            <p>  　艾兰・乌德先生的书《热烈的怀疑主义者》受到广泛和应有的赞扬，他本打算撰文对我的哲学做一番更专门的考查。可是在他去世的时候，他的文章只完成了一小部分。这一部分中有一个导言。看过这一篇导言的人认为很有价值，所以值得发表，因此就印在本书的末尾。</p>
+<p>假如当初能早一点得到他这篇文章，本会把它放在本书的前面的。但是这篇文章到手太晚了，遂致这样做就没有可能。我奉劝读者先看他这篇文章，因为他这文章把很多容易使人误会之处讲得极为明白。乌德先生未能活到他完成这部著作，这使人极感惋惜。</p>
+<p></p>
+<p> 　 伯特兰・罗素</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

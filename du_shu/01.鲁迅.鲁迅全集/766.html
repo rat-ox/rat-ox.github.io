@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赠画师〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>赠画师〔１〕</h1>
+            <p></p>
+<p>　　风生白下千林暗，雾塞苍天百卉殚。〔２〕</p>
+<p></p>
+<p>　　愿乞画家新意匠，只研朱墨作春山。</p>
+<p></p>
+<p>　　一月二十六日</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三三年一月二十六日：“为画师望月玉成君书一笺云：‘风生白下千林暗，……。’”</p>
+<p></p>
+<p>　　〔２〕　白下　白下城，故址在今南京金川门外。唐武德九年（６２６）移金陵县治于此，改名白下县，故旧时以白下为南京的别称。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

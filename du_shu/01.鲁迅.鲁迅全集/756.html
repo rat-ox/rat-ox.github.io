@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题二首〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题二首〔１〕</h1>
+            <p></p>
+<p>　　大江日夜向东流，聚义群雄又远游。</p>
+<p></p>
+<p>　　六代绮罗成旧梦，石头城上月如钩。〔２〕</p>
+<p></p>
+<p>　　其　　二</p>
+<p></p>
+<p>　　雨花台边埋断戟，莫愁湖里余微波。〔３〕</p>
+<p></p>
+<p>　　所思美人不可见，归忆江天发浩歌。〔４〕</p>
+<p></p>
+<p>　　六月</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三一年六月十四日：“为宫崎龙介书一幅云：‘大江日夜向东流，……’又为白莲女士书一幅云：‘雨花台边埋断戟……。’”“群雄”，手迹作“英雄”，“不可见”作“杳不见”。按宫崎龙介（１８９２―１９７１），日本律师，一九三一年来上海时曾访问鲁迅。</p>
+<p></p>
+<p>　　其父宫崎弥藏系支持中国民主革命的志士，叔父宫崎寅藏曾协助孙中山从事革命活动。白莲女士，即柳原烨子（１８８５―１９６７），日本女作家，宫崎龙介的夫人。</p>
+<p></p>
+<p>　　〔２〕　六代　我国历史上三国时的吴，东晋，南朝的宋、齐、梁、陈六个朝代，都建都南京，合称六朝。石头城，古城名，本名金陵城，东汉末年孙权重筑改名，故址在今南京清凉山，后用石头城代指南京。</p>
+<p></p>
+<p>　　〔３〕　雨花台　在南京城南聚宝山上，亦称石子岗。据《高僧传》，南朝梁武帝时云光法师在此讲经，感动上天，落花如雨，故名。辛亥革命时，革命军进攻南京，曾在此血战多日。莫愁湖，在南京水西门外，相传六朝洛阳女子卢莫愁曾居于此，故名。辛亥革命胜利后，南京临时政府曾在湖边建阵亡将士纪念碑，刻有孙中山“建国成仁”的题词。</p>
+<p></p>
+<p>　　〔４〕　浩歌　语出《楚辞・九歌・少司命》：“望美人兮未来，临风恍兮浩歌。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

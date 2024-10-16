@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《海上述林》上卷插图正误〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《海上述林》上卷插图正误〔１〕</h1>
+            <p></p>
+<p>　　本书上卷插画正误――</p>
+<p></p>
+<p>　　５８页后“普列哈诺夫”系“拉法格”之误；９６页后“我们的路”〔２〕系“普列哈诺夫”之误；１３４页后“拉法格”系“我们的路”之误：</p>
+<p></p>
+<p>　　特此订正，并表歉忱。</p>
+<p></p>
+<p>　　〔１〕　本篇最初印于一九三六年十月出版的《海上述林》下卷卷末，原无标题。</p>
+<p></p>
+<p>　　《海上述林》，瞿秋白的译文集，鲁迅编印。分上下两卷；先后于一九三六年五月、十月以诸夏怀霜社名义出版。</p>
+<p></p>
+<p>　　〔２〕　“我们的路”　俄国彼得堡五金工人协会机关刊物的刊名，半月刊；创刊于一九一○年。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

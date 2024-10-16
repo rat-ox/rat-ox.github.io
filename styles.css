@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+nav {
+    background-color: #002244;
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #00509e;
+}
+section {
+    padding: 20px;
+}
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+
+    width: 100%;
+    margin-top: auto; /* Pushes the footer to the bottom if the content is short */
+
+}
+.content {
+
+    flex: 1; /* Ensure the content section takes up the available space */
+
+    max-width: 800px;
+    margin: auto;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《木刻纪程》告白〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《木刻纪程》告白〔１〕</h1>
+            <p></p>
+<p>　　一、本集为不定期刊，一年两本，或数年一本，或只有这一本。</p>
+<p></p>
+<p>　　二、本集全仗国内木刻家协助，以作品印本见寄，拟选印者即由本社通知，借用原版。画之大小，以纸幅能容者为限。彩色及已照原样在他处发表者不收。</p>
+<p></p>
+<p>　　三、本集入选之作，并无报酬，只每一幅各赠本集一册。</p>
+<p></p>
+<p>　　四、本集因限于资力，只印一百二十本，除赠送作者及选印关系人外，以八十本发售，每本实价大洋一元正。</p>
+<p></p>
+<p>　　五、代售及代收信件处，为：上海北四川路底内山书店。</p>
+<p></p>
+<p>　　铁木艺术社谨告。</p>
+<p></p>
+<p>　　〔１〕　本篇最初印于一九三四年鲁迅以铁木艺术社名义自费印行的《木刻纪程》附页，原题《告白》。</p>
+<p></p>
+<p>　　《木刻纪程》，木刻画集，鲁迅编选，共收八位青年木刻工作者的作品二十四幅。封面有“一九三四年六月”字样，据鲁迅日记，系同年八月十四日编讫付印。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>白事〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>白事〔１〕</h1>
+            <p></p>
+<p>　　本刊〔２〕虽说经我“校阅”，但历来仅于听讲的同学和熟识的友人们的作品，时有商酌之处，余者但就笔误或别种原因，间或改换一二字而已。现又觉此种举动，亦属多事，所以不再通读，亦不更负“校阅”全部的责任。特此声明！</p>
+<p></p>
+<p>　　三月二十二日，鲁迅。</p>
+<p></p>
+<p>　　〔１〕　本篇最初刊于一九二五年三月二十四日北京《民众文艺周刊》第十四期。</p>
+<p></p>
+<p>　　〔２〕　指《民众文艺周刊》。一九二四年十二月九日在北京创刊，《京报》的附刊之一，荆有麟、胡崇轩（也频）等编辑。第十六期（一九二五年四月七日）起改名《民众文艺》，第二十五期（一九二五年六月二十三日）改名《民众周刊》，第三十一期（一九二五年八月四日）改名《民众》，一九二五年十一月出至第四十七期停刊。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

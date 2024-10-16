@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题</h1>
+            <p></p>
+<p>　　（１９３１年）</p>
+<p></p>
+<p>　　大野多钩棘，长天列战云。</p>
+<p></p>
+<p>　　几家春袅袅？万籁静［忄音］［忄音］。</p>
+<p></p>
+<p>　　下土惟秦醉①，中流辍越吟②。</p>
+<p></p>
+<p>　　风波一浩荡，花树已萧森。</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３１年３月５日：“昙，午后为升屋、松藻、松元各书自作一幅，文录于后。”这首是写给松藻的。松藻姓片山，为内山完造的弟媳。</p>
+<p></p>
+<p>　　①汉朝张衡《西京赋》：“昔者大帝说（悦）秦穆公而觐之，饷以钧天广乐，帝有醉焉，乃为金策，锡（赐）用此土，而剪诸鹑首。”醇首指二十八宿中的井宿到柳宿，代指秦国境土。</p>
+<p></p>
+<p>　　②越吟：王粲《登楼赋》：“钟仪幽而楚奏兮，庄舄显而越吟；人情同于怀土兮， 岂穷达而异心。”典出《史记・陈轸传》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

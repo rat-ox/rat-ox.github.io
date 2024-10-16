@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>序</h1>
+            <p>在现代教育中，专业教育日益暴露出一个严重的缺陷，即心灵狭隘的缺陷。这个问题在艺术教育中也未能避免。我们所谓的艺术学院，通常是建立在这样一种理论上，即通过艺术教育将学生引入精神生活。然而 ，它却往往忽略了为知识而奋斗或通过知识而解放的历史，忽略了科学观念的历史，甚至忽略了教育学生在理智上的诚实。结果，它导致了心灵的贫困和心胸的狭窄，甚至它导致了漠视价值的可怕倾向。</p>
+<p>摆脱这种困境的途径之一，也许是恢复学院的一个古老传统——重新唤起对知识的惊奇感，唤起对书籍的依恋感；否则，知识就有停顿的危险。这就是编辑学院丛书的基本想法。因此，我们将下述引语作为丛书的书首箴言：</p>
+<p>我们的文明是书籍的文明：它的传统和它的本源，它的严格性和它的理智责任感，它的空前想象力和它的创造力，它对自由的理解和对自由的关注——这一切以我们对书籍的热爱为基础，愿时尚、传媒和电脑永远不会破坏或者松驰个人对书籍的这种亲切的依恋！</p>
+<p>学院丛书种类不限，随排随印。第一辑五种，书目如下：一、波普尔，《通过知识获得解放》；二、赫伊津哈，《中世纪的衰落》；三、赫伊津哈，《游戏的人》；四、燕卜荪，《朦胧的七种类型》；五、巴克桑德尔，《意图的模式：关于图画的历史说明》。</p>
+<p>范景中  　1996年9月</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

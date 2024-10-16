@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《艺苑朝华》广告〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《艺苑朝华》广告〔１〕</h1>
+            <p></p>
+<p>　　虽然材力很小，但要绍介些国外的艺术作品到中国来，也选印中国先前被人忘却的还能复生的图案之类。有时是重提旧时而今日可以利用的遗产，有时是发掘现在中国时行艺术家的在外国的祖坟，有时是引入世界上的灿烂的新作。每期十二辑，每辑十二图，陆续出版。每辑实洋四角，预定一期实洋四元四角。目录如下：</p>
+<p></p>
+<p>　　１．《近代木刻选集》（１）</p>
+<p></p>
+<p>　　２．《拾谷虹儿画选》</p>
+<p></p>
+<p>　　３．《近代木刻选集》（２）</p>
+<p></p>
+<p>　　４．《比亚兹莱画选》以上四辑已出版</p>
+<p></p>
+<p>　　５．《新俄艺术图录》</p>
+<p></p>
+<p>　　６．《法国插画选集》</p>
+<p></p>
+<p>　　７．《英国插画选集》</p>
+<p></p>
+<p>　　８．《俄国插画选集》</p>
+<p></p>
+<p>　　９．《近代木刻选集》（３）</p>
+<p></p>
+<p>　　１０．《希腊瓶画选集》</p>
+<p></p>
+<p>　　１１．《近代木刻选集》（４）</p>
+<p></p>
+<p>　　１２．《罗丹雕刻选集》</p>
+<p></p>
+<p>　　朝花社出版。</p>
+<p></p>
+<p>　　〔１〕　本篇最初印入一九二九年四月朝花社出版的《近代世界短篇小说集》第一集《奇剑及其他》书后。</p>
+<p></p>
+<p>　　《艺苑朝华》，朝花社出版的美术丛刊，鲁迅、柔石编辑，共出外国美术作品五辑，即《近代木刻选集》一、二集，《拾谷虹儿画选》、《比亚兹莱画选》和《新俄画选》。后一辑编成时朝花社已结束，改由光华书局出版。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

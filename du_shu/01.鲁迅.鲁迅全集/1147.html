@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>惯于长夜过春时</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>惯于长夜过春时</h1>
+            <p></p>
+<p>　　（１９３１年）　</p>
+<p></p>
+<p>　　惯于长夜过春时，挈妇将雏鬓有丝。</p>
+<p></p>
+<p>　　梦里依稀慈母泪，城头变幻大王旗。</p>
+<p></p>
+<p>　　忍看朋辈成新鬼，怒向刀丛觅小诗。</p>
+<p></p>
+<p>　　吟罢低眉无写处，月光如水照缁衣。</p>
+<p></p>
+<p>　　这首诗见于《南腔北调集・为了忘却的纪念》，为悼念“左联”五烈士而作。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

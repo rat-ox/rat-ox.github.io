@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赠画师</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>赠画师</h1>
+            <p></p>
+<p>　　（１９３３年）</p>
+<p></p>
+<p>　　风生白下千林暗①，雾塞苍天百卉殚。</p>
+<p></p>
+<p>　　愿乞画家新意匠，只研朱墨作春山。</p>
+<p></p>
+<p>　　一月二十六日</p>
+<p></p>
+<p>　　《鲁迅日记》１９３３年１月２６日：“为画师望月玉成君书一笺云：（略）。”</p>
+<p></p>
+<p>　　①白下：古地名，今南京市西北。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题辞</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>题辞</h1>
+            <p></p>
+<p>　　附录一九二六年的一篇。一九二八年十月由上海北新书局初版。</p>
+<p></p>
+<p>　　题辞〔１〕</p>
+<p></p>
+<p>　　这半年我又看见了许多血和许多泪，然而我只有杂感而已。</p>
+<p></p>
+<p>　　泪揩了，血消了；</p>
+<p></p>
+<p>　　屠伯们逍遥复逍遥，</p>
+<p></p>
+<p>　　用钢刀的，用软刀的。</p>
+<p></p>
+<p>　　然而我只有“杂感”而已。</p>
+<p></p>
+<p>　　连“杂感”也被“放进了应该去的地方”时，我于是只有“而已”而已！</p>
+<p></p>
+<p>　　以上的八句话，是在一九二六年十月十四夜里，编完那年那时为止的杂感集后，写在末尾的，现在便取来作为一九二七年的杂感集的题辞。</p>
+<p></p>
+<p>　　一九二八年十月三十日，鲁迅校讫记。</p>
+<p></p>
+<p>　　〔１〕本篇最初收入《华盖集续编》，是作者编完该书时所作。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

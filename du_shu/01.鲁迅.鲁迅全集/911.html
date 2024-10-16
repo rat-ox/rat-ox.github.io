@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谨启〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>谨启〔１〕</h1>
+            <p></p>
+<p>　　诸位读者先生：</p>
+<p></p>
+<p>　　《北新》〔２〕第三卷第二号的插图，还是《美术史潮论》上的插图，那“罗兰珊〔３〕：《女》”及“莱什〔４〕：《朝餐》”，画和题目互错了，请自行改正，或心照。</p>
+<p></p>
+<p>　　顺便还要附告几位先生们：著作“落伍”，翻译错误，是我的责任。其余如书籍缺页，定刊物后改换地址，邮购刊物回件和原单不符，某某殊为可恶之类，我都管不着的，希径与书店直接交涉为感。</p>
+<p></p>
+<p>　　一月二十八日，鲁迅。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九二九年二月十六日《北新》半月刊第三卷第四号。</p>
+<p></p>
+<p>　　〔２〕　《北新》　综合性杂志，北新书局出版。一九二六年七月创刊于上海。初为周刊，孙福熙主编；一九二七年十一月第二卷第一号起改为半月刊，潘梓年等主编。一九三○年十二月出至第四卷第二十四期停刊。</p>
+<p></p>
+<p>　　〔３〕　罗兰珊（Ｍ．Ｌａｕｒｅｎｃｉｎ，１８８５―？）　十九世纪法国画家。</p>
+<p></p>
+<p>　　〔４〕　莱什（Ｆ．Ｌｅｇｅｒ，１８８１―１９５５）　法国画家。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

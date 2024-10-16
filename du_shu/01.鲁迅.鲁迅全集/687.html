@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>送Ｏ．Ｅ．君携兰归国〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>送Ｏ．Ｅ．君携兰归国〔１〕</h1>
+            <p></p>
+<p>　　椒焚桂折佳人老，独托幽岩展素心。</p>
+<p></p>
+<p>　　岂惜芳馨遗远者，故乡如醉有荆榛。</p>
+<p></p>
+<p>　　二月十二日</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三一年八月十日《文艺新闻》第二十二号，与《无题》（“大野多钩棘”）、《湘灵歌》同在《鲁迅氏的悲愤――以旧诗寄怀》的短讯中刊出。《鲁迅日记》一九三一年二月十二日：</p>
+<p></p>
+<p>　　“日本京华堂主人小原荣次郎君买兰将东归，为赋一绝句，书以赠之。”</p>
+<p></p>
+<p>　　Ｏ．Ｅ．即小原荣次郎日语读音的罗马字拼音（Ｏｂａｒａ　Ｅｉｊｉｒｏ）的缩写。</p>
+<p></p>
+<p>　　当时他在东京开设京华堂，经营中国文玩和兰草。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

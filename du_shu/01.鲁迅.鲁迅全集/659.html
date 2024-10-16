@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱之神〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>爱之神〔１〕</h1>
+            <p></p>
+<p>　　一个小娃子，展开翅子在空中，</p>
+<p></p>
+<p>　　一手搭箭，一手张弓，</p>
+<p></p>
+<p>　　不知怎么一下，一箭射着前胸。</p>
+<p></p>
+<p>　　“小娃子先生，谢你胡乱栽培！</p>
+<p></p>
+<p>　　但得告诉我：我应该爱谁？”</p>
+<p></p>
+<p>　　娃子着慌，摇头说，“唉！</p>
+<p></p>
+<p>　　你是还有心胸的人，竟也说这宗话。</p>
+<p></p>
+<p>　　你应该爱谁，我怎么知道。</p>
+<p></p>
+<p>　　总之我的箭是放过了！</p>
+<p></p>
+<p>　　你要是爱谁，便没命的去爱他；</p>
+<p></p>
+<p>　　你要是谁也不爱，也可以没命的去自己死掉。”</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九一八年五月十五日《新青年》第四卷第五号，署名唐俟。</p>
+<p></p>
+<p>　　爱之神，古罗马神话中有爱神丘比特（Ｃｕｐｉｄ），传说是一个身生双翅手持弓箭的美少年，他的金箭射到青年男女的心上，就会产生爱情。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

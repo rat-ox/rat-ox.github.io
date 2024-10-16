@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序言</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>序言</h1>
+            <p></p>
+<p>　　〔2〕《域外小说集》为书，词致朴讷，不足方近世名人译本〔3〕。特收录至审慎，译亦期弗失文情。异域文术新宗，自此始入华土。使有士卓特，不为常俗所囿，必将犁然有当于心〔4〕，按邦国时期，籀读其心声，以相度神思之所在。则此虽大涛之微沤与，而性解〔5〕思惟，实寓于此。中国译界，亦由是无迟莫之感矣。</p>
+<p></p>
+<p>　　己酉正月十五日。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕《域外小说集》　鲁迅与周作人合译的外国短篇小说选集。</p>
+<p></p>
+<p>　　共两册，一九○九年三月、七月先后在日本东京出版，署“会稽周氏兄弟纂译”，周树人发行，上海广昌隆绸庄寄售。第一册原收小说七篇，署“树人”译者二篇（安德烈夫的《谩》和《默》）；第二册原收小说九篇，署“树人”译者一篇（迦尔洵的《四日》）。一九二一年增订改版合为一册，上海群益书社出版。</p>
+<p></p>
+<p>　　〔2〕本篇及《略例》，最初均印入《域外小说集》初版的第一册。</p>
+<p></p>
+<p>　　〔3〕近世名人　指林纾。鲁迅在一九三二年一月十六日致增田涉信中说：“《域外小说集》发行于一九○七年或一九○八年，我与周作人还在日本东京。当时中国流行林琴南用古文翻译的外国小说，文章确实很好，但误译很多。我们对此感到不满，想加以纠正，才干起来的”。</p>
+<p></p>
+<p>　　〔4〕犁然有当于心　语出《庄子・山木》：“木声与人声犁然有当于人之心。”犁然，清楚明白的意思。</p>
+<p></p>
+<p>　　〔5〕性解　天才。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

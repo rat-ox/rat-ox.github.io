@@ -1,0 +1,25 @@
+# add a new nemu
+# only these two lines need to be added:
+
+    <script src="loadNav.js" defer></script>
+
+    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
+
+# normal operation:
+cd /opt/github/rat-ox/rat-ox.github.io
+git status
+./convert_du_shu.sh
+cat footer.html
+
+git add . ;git commit -a -m "font changed"
+
+git remote -v
+
+git push bitbucket_apox1
+git push bitbucket_apox0
+git push
+
+# 3 sites, all the same
+https://apox1.bitbucket.io/
+https://apox0.bitbucket.io/
+https://rat-ox.github.io/

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lego Set</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Lego Set</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Set Number</th>
+                <th>Set Name</th>
+                <th>Purchase Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add more rows as needed latest top-->
+            <tr>
+                <td><a href="https://www.lego.com/en-ca/product/mercedes-amg-f1-w14-e-performance-pull-back-42165">42165</a></td>
+                <td>Mercedes-AMG F1 W14 E Performance</td>
+                <td>2024-07-20</td>
+                <td>$34.99</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lego.com/">2856755</a></td>
+                <td>Standard small box of pieces</td>
+                <td>2023-06-15</td>
+                <td>$12.99</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lego.com/en-ca/product/construction-steamroller-60401">60401</a></td>
+                <td>Construction Steamroller</td>
+                <td>2023-05-27</td>
+                <td>$13.99</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lego.com/en-ca/product/heavy-duty-bulldozer-42163">42163</a></td>
+                <td>Heavy-Duty Bulldozer</td>
+                <td>2023-04-27</td>
+                <td>$16.99</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lego.com/en-ca/product/mack-lr-electric-garbage-truck-42167">42167</a></td>
+                <td>Mack® LR Electric Garbage Truck</td>
+                <td>2023-01-27</td>
+                <td>$39.99</td>
+            </tr>
+            <tr>
+                <td><a href="https://www.lego.com/en-ca/product/arctic-explorer-truck-and-mobile-lab-60378">60378</a></td>
+                <td>Arctic Explorer Truck and Mobile Lab</td>
+                <td>2022-12-23</td>
+                <td>$99.99</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>序</h1>
+            <p>梁守德</p>
+<p>有关马汉海上权益论的思想精华，本书应该是迄今为止国内首部集大成者。</p>
+<p>马汉在美国享有很高的历史地位，在世界海军界也颇有声望，其有关争夺海上主导权对于主宰国家乃致世界命运都会起到决定性作用的观点，更是盛行世界近百年而长久不衰，这就是所谓的海权论。</p>
+<p>在我国，过去由于历史与时代条件的影响，有关马汉的学术与军事政治思想的研讨一直处于空白状态，国内对于马汉思想的介绍及其原作的翻译也因此而止步不前。</p>
+<p>随着我国改革开放事业的深入，对外贸易、人员交往的日趋扩大，国人的意识也在逐渐更新与全面，普通民众的眼光在中国历史上首次突破了陆地的疆域而走向了深蓝的海洋。人们渴望大海，大海也在呼唤着中国，我们应有自己的一片蓝色国土。</p>
+<p>我国及联合国有关海洋的新的法规的颁布，从国内与国际法的角度肯定了我国确立本国蓝色疆域的正当要求，这也是维护我国国家主权，捍卫国家权益的必然举措。</p>
+<p>目前，我国有关国际政治的学科方面正处于一个创建与塑造的阶段，中国需要有中国特色的海洋理论，这其中自然离不开吸收前人的成果，尤其是像马汉这样一位近代以来最杰出的海洋理论学家。当然，马汉有关海洋的理论，包含着浓厚的大国强国的强权色彩与逻辑，从当时的时代背景中，还透射了对于建立殖民地半殖民地的溢美之辞，公开宣扬“强权即公理”的丛林规则，这都是我们在认真研读过程中，必须加以唾弃的思想。尽管如此，马汉的海洋权益论思想不仅对于我国现行的国家政策，而且对于建设有中国特色的国际政治理论，尤其在扩展国家主权与权益的内涵方面都存有相当的借鉴意义。</p>
+<p>作为北京大学国际关系学院博士研究生的萧伟中、梅然两位同学，通过收集、整理、翻译马汉的多部海洋权益论著作，吸纳了马汉思想中的精华部份，并使之尽快与我国广大读者及研究人员见面，应该说对于进一步唤醒国人的海洋意识、正确认识我国海洋目前所面临的挑战以及推动我国具有本国特色的海洋权益论的建设，起到了一定的作用，应值得肯定。</p>
+<p></p>
+<p>（作者系北京大学国际关系学院院长）</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>序论</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>序论</h1>
+            <p>被看作政治家或立法家的一门科学的政治经济学，提出两个不同的目标：第一，给人民提供充足的收入或生计，或者更确切地说，使人民能给自己提供这样的收入或生计；第二，给国家或社会提供充分的收入，使公务得以进行。总之，其目的在于富国裕民。</p>
+<p>不同时代不同国民的不同富裕程度，曾产生两种不同的关于富国裕民的政治经济学体系。其一，可称为重商主义；其二，可称为重农主义。关于这两个主义，我将尽我所能，作详细明了的说明，而且将从重商主义开始。这是近世的学说，在我国今日又最为人所理解。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

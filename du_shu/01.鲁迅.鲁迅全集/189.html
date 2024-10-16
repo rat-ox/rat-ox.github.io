@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后记</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>后记</h1>
+            <p></p>
+<p>　　这半年我又看见了许多血和许多泪，</p>
+<p></p>
+<p>　　然而我只有杂感而已。</p>
+<p></p>
+<p>　　泪揩了，血消了；</p>
+<p></p>
+<p>　　屠伯们逍遥复逍遥，用钢刀的，用软刀〔1〕</p>
+<p></p>
+<p>　　的。</p>
+<p></p>
+<p>　　然而我只有“杂感”而已。</p>
+<p></p>
+<p>　　连“杂感”也被“放进了应该去的地方”〔2〕时，我于是只有“而已”而已！</p>
+<p></p>
+<p>　　十月十四夜，校讫记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕软刀　语出明朝遗民贾凫西所作的《木皮散人鼓词》：“几年家软刀子割头不觉死，只等得太白旗悬才知道命有差。”这里借用“软刀子”来比喻现代评论派的反动言论。</p>
+<p></p>
+<p>　　〔2〕这是陈西滢在《致志摩》（一九二六年一月三十日《晨报副刊》）中攻击鲁迅的话，参看本书《无花的蔷薇》第八节。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

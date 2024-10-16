@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>莲蓬人</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>莲蓬人</h1>
+            <p></p>
+<p>　　（１９００年）</p>
+<p></p>
+<p>　　芰裳荇带处仙乡①，风定犹闻碧玉香。</p>
+<p></p>
+<p>　　鹭影不来秋瑟瑟，苇花伴宿露［氵襄］［氵襄］。</p>
+<p></p>
+<p>　　扫除腻粉呈风骨，褪却红衣学淡妆。</p>
+<p></p>
+<p>　　好向濂溪称净植②，莫随残叶堕寒塘。</p>
+<p></p>
+<p>　　①芰裳：屈原《离骚》：“制芰荷以为衣兮，集芙蓉（荷花）以为裳。”荇带：杜甫《曲江对雨》：“水荇牵风翠带长。”</p>
+<p></p>
+<p>　　②濂溪，即宋朝周敦颐，作有《爱莲说》。　</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

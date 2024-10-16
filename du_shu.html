@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>读 书 📚</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="footer.js" defer></script>
+    <script src="du_shu.js" defer></script>
+    <script src="loadNav.js" defer></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>读 书 📚</h1>
+    </header>
+    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
+    <section class="content">
+        <div>
+            <h2>读 书 📚</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                    </tr>
+                </thead>
+                <tbody id="du_shu-table-body">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+</body>
+</html>

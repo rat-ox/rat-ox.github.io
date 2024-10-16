@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Rat-Ox</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="footer.js" defer></script>
+    <script>
+        function loadNav() {
+            fetch('nav.html')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById('nav-placeholder').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading nav.html:', error);
+                    document.getElementById('nav-placeholder').innerHTML = '<p>Error loading navigation menu.</p>';
+                });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <div id="nav-placeholder"></div> <!-- Placeholder for the navigation menu -->
+    <section>
+        <div class="content">
+            <h2>About Me</h2>
+            <p>Hi, I'm Rat-Ox, a person who loves diving into the technical details of IT technology. I enjoy exploring new tech trends, learning about emerging technologies, and sharing my knowledge with others.</p>
+        </div>
+    </section>
+    <div id="footer-placeholder"></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>无题</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>无题</h1>
+            <p></p>
+<p>　　（１９３２年）</p>
+<p></p>
+<p>　　血沃中原肥劲草①，寒凝大地发春华。</p>
+<p></p>
+<p>　　英雄多故谋夫病，泪洒崇陵噪暮鸦②。</p>
+<p></p>
+<p>　　一月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３２年１月２３日：“午后为高良夫人写一小幅，云：（略）。”高良夫人，即高良富子夫人。</p>
+<p></p>
+<p>　　①《后汉书・王霸传》：“疾风知劲草。”</p>
+<p></p>
+<p>　　②１９３２年１月，广州和南京合组的政府成立，蒋介石回奉化，汪精卫托病到上海，行政院长孙科主政，事事棘手，被迫下台。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

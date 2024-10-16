@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《观照享乐的生活》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《观照享乐的生活》译者附记〔1〕</h1>
+            <p></p>
+<p>　　作者对于他的本国的缺点的猛烈的攻击法，真是一个霹雳手〔2〕。但大约因为同是立国于亚东，情形大抵相像之故罢，他所狙击的要害，我觉得往往也就是中国的病痛的要害；这是我们大可以借此深思，反省的。</p>
+<p></p>
+<p>　　十二月五日　译者。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《观照享乐的生活》（《出了象牙之塔》一书中的一篇）的译文，最初发表于一九二四年十二月十三日《京报副刊》，后未印入单行本。</p>
+<p></p>
+<p>　　〔2〕霹雳手　语出《新唐书・裴y传》，原指裴琰之断案迅捷：</p>
+<p></p>
+<p>　　“积案数百，……一日毕，既与夺当理，而笔词劲妙。……由是名动一州，号‘霹雳手’。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

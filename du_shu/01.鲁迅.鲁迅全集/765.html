@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>答客诮〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>答客诮〔１〕</h1>
+            <p></p>
+<p>　　无情未必真豪杰，怜子如何不丈夫。</p>
+<p></p>
+<p>　　知否兴风狂啸者，回眸时看小於菟。〔２〕</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　〔１〕　《鲁迅日记》一九三二年十二月三十一日：“为知人写字五幅，……为达夫……又一幅云：‘无情未必真豪杰，……。’”此诗在书赠坪井芳治时，题款为：“未年之冬戏作。”</p>
+<p></p>
+<p>　　〔２〕　於菟　即虎。《左传》宣公四年：“楚人……谓虎於菟。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

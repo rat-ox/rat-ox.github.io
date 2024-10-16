@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更正〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>更正〔１〕</h1>
+            <p></p>
+<p>　　编辑先生：</p>
+<p></p>
+<p>　　二十一日《自由谈》的《批评家的批评家》第三段末行，“他没有一定的圈子”是“他须有一定的圈子”之误，乞予更正为幸。</p>
+<p></p>
+<p>　　倪朔尔启。</p>
+<p></p>
+<p>　　〔１〕　本篇最初刊于一九三四年一月二十四日《申报・自由谈》。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

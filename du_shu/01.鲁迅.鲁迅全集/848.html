@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题赠冯蕙熹〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>题赠冯蕙熹〔１〕</h1>
+            <p></p>
+<p>　　杀人有将，救人为医。</p>
+<p></p>
+<p>　　杀了大半，救其孑遗。</p>
+<p></p>
+<p>　　小补之哉，乌乎噫嘻！</p>
+<p></p>
+<p>　　鲁迅</p>
+<p></p>
+<p>　　一九三十年九月一日，上海</p>
+<p></p>
+<p>　　〔１〕　本篇据手迹编入，原无标题。</p>
+<p></p>
+<p>　　冯蕙熹，广东南海人，许广平的表妹。当时是北平协和医学院学生。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>湘灵歌①</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>湘灵歌①</h1>
+            <p></p>
+<p>　　（１９３１年）</p>
+<p></p>
+<p>　　昔闻湘水碧如染，今闻湘水胭脂痕。</p>
+<p></p>
+<p>　　湘灵妆成照湘水，皎如皓月窥彤云。</p>
+<p></p>
+<p>　　高丘寂寞竦中夜②，芳荃零落无余春。</p>
+<p></p>
+<p>　　鼓完瑶瑟人不闻③，太平成象盈秋门④。</p>
+<p></p>
+<p>　　三月</p>
+<p></p>
+<p>　　这首是写给片山松元的。《鲁迅日记》１９３１年３月５日，诗中“如”作“于”，“皎”作“皓”，“皓”作“素”。</p>
+<p></p>
+<p>　　①湘灵：《后汉书・马融传》注：“湘灵，舜妃。”</p>
+<p></p>
+<p>　　②高丘：楚国山名。屈原《离骚》：“忽反顾以流涕兮，哀高丘之无女。”</p>
+<p></p>
+<p>　　③唐朝钱起《湘灵鼓瑟》：“曲终人不见，江上数峰青。”</p>
+<p></p>
+<p>　　④太平成象：《通鉴・唐纪六十》，大和六年，唐文宗问宰相牛僧儒：“天下何时当太平？”牛答：“太平无象。今四夷不至交侵，百姓不至流散，虽非至理，亦谓小康。”秋门：李贺《自昌谷到洛后门》：“苍岑竦秋门。”曾益注：“洛阳有宜秋门、千秋门。”洛阳是东都，这里借秋门指南京。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《文艺研究》例言〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《文艺研究》例言〔１〕</h1>
+            <p></p>
+<p>　　一、《文艺研究》专载关于研究文学，艺术的文字，不论译著，并且延及文艺作品及作者的绍介和批评。</p>
+<p></p>
+<p>　　二、《文艺研究》意在供已治文艺的读者的阅览，所以文字的内容力求其较为充实，寿命力求其较为久长，凡泛论空谈及启蒙之文，倘是陈言，俱不选入。</p>
+<p></p>
+<p>　　三、《文艺研究》但亦非专载今人作品，凡前人旧作，倘于文艺史上有重大关系，划一时代者，仍在绍介之列。</p>
+<p></p>
+<p>　　四、《文艺研究》的倾向，在究明文艺与社会之关系，所以凡社会科学上的论文，倘其中有若干部分涉及文艺者，有时亦仍在绍介之列。</p>
+<p></p>
+<p>　　五、《文艺研究》甚愿于中国新出之关于文艺及社会科学书籍，有简明的绍介和批评，以便利读者。但同人见识有限，力不从心，倘蒙专家惠寄相助，极所欣幸。</p>
+<p></p>
+<p>　　六、《文艺研究》又甚愿文与艺相钩连，因此微志，所以在此亦试加插图，并且在可能范围内，多载塑绘及雕刻之作。</p>
+<p></p>
+<p>　　七、《文艺研究》于每年二月，五月，八月，十一月十五日各印行一本；每四本为一卷。每本约二百余页，十万至十二万字。倘多得应当流布的文章，即随时增页。</p>
+<p></p>
+<p>　　八、《文艺研究》上所载诸文，此后均不再印造单行本子，所以此种杂志即为荟萃单篇要论之丛书，可以常资参考。</p>
+<p></p>
+<p>　　〔１〕　本篇最初载于一九三○年上海《文艺研究》创刊号。未署名。一九三○年二月八日鲁迅日记：“午寄陈望道信并《文艺研究》例言草稿八条。”</p>
+<p></p>
+<p>　　《文艺研究》，季刊，鲁迅编辑，版权页印一九三○年二月十五日出版，实际出版时间约有四月底至五月初。仅出一期。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

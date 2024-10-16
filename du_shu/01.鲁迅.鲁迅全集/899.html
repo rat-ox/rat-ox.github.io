@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《苦闷的象征》广告〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《苦闷的象征》广告〔１〕</h1>
+            <p></p>
+<p>　　这其实是一部文艺论，共分四章。现经我以照例的拙涩的文章译出，并无删节，也不至于很有误译的地方。印成一本，插图五幅，实价五角，在初出版两星期中，特价三角五分。但在此期内，暂不批发。北大新潮社代售。</p>
+<p></p>
+<p>　　鲁迅告白。</p>
+<p></p>
+<p>　　〔１〕　本篇最初刊于一九二五年三月十日《京报副刊》。</p>
+<p></p>
+<p>　　《苦闷的象征》，日本厨川白村（１８８０―１９２３）著。鲁迅译本于一九二四年十二月出版，为《未名丛刊》之一，由北京新潮社代售。后又改由北新书局出版。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

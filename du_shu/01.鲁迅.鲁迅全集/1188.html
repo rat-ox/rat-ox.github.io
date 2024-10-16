@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>好东西歌</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>好东西歌</h1>
+            <p></p>
+<p>　　南边整天开大会，北边忽地起烽烟，</p>
+<p></p>
+<p>　　北人逃难南人嚷，请愿打电闹连天。</p>
+<p></p>
+<p>　　还有你骂我来我骂你，说得自己蜜样甜。</p>
+<p></p>
+<p>　　文的笑道岳飞假，武的却云秦桧奸。</p>
+<p></p>
+<p>　　相骂声中失土地，相骂声中捐铜钱，</p>
+<p></p>
+<p>　　失了土地捐过钱，喊声骂声也寂然。</p>
+<p></p>
+<p>　　文的牙齿痛，武的上温泉。</p>
+<p></p>
+<p>　　后来知道谁也不是岳飞或秦桧，声明误解释前嫌，</p>
+<p></p>
+<p>　　大家都是好东西，终于聚首一堂来吸雪茄烟。</p>
+<p></p>
+<p>　　一九三一年</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

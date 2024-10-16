@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>“有不为斋”〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>“有不为斋”〔１〕</h1>
+            <p></p>
+<p>　　孔子曰：“不得中行而与之，必也狂狷乎，狂者进取，狷者有所不为也。”〔２〕</p>
+<p></p>
+<p>　　于是很有一些人便争以“有不为”名斋〔３〕，以孔子之徒自居，以“狷者”自命。</p>
+<p></p>
+<p>　　但敢问――</p>
+<p></p>
+<p>　　“有所不为”的，是卑鄙龌龊的事乎，抑非卑鄙龌龊的事乎？</p>
+<p></p>
+<p>　　“狂者”的界说没有“狷者”的含糊，所以以“进取”名斋者，至今还没有。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九三五年五月二十日《太白》半月刊第二卷第五期“掂斤簸两”栏，署名直入。</p>
+<p></p>
+<p>　　〔２〕　“不得中行而与之”等语，见《论语・子路》。</p>
+<p></p>
+<p>　　〔３〕　清代傅九渊、李翰华、光律元等，都曾用“有不为”作自己的书斋名。一九三二年至一九三四年间，林语堂在《论语》和《人间世》上以《有不为斋随笔》为总题发表过文章。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

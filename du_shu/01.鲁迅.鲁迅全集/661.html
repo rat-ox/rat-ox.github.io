@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>他们的花园〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>他们的花园〔１〕</h1>
+            <p></p>
+<p>　　小娃子，卷螺发，</p>
+<p></p>
+<p>　　银黄面庞上还有微红，――看他意思是正要活。</p>
+<p></p>
+<p>　　走出破大门，望见邻家：</p>
+<p></p>
+<p>　　他们大花园里，有许多好花。</p>
+<p></p>
+<p>　　用尽小心机，得了一朵百合；又白又光明，像才下的雪。</p>
+<p></p>
+<p>　　好生拿了回家，映着面庞，分外添出血色。</p>
+<p></p>
+<p>　　苍蝇绕花飞鸣，乱在一屋子里――</p>
+<p></p>
+<p>　　“偏爱这不干净花，是胡涂孩子！”</p>
+<p></p>
+<p>　　忙看百合花，却已有几点蝇矢。</p>
+<p></p>
+<p>　　看不得；舍不得。</p>
+<p></p>
+<p>　　瞪眼望天空，他更无话可说。</p>
+<p></p>
+<p>　　说不出话，想起邻家：</p>
+<p></p>
+<p>　　他们大花园里，有许多好花。</p>
+<p></p>
+<p>　　〔１〕　本篇最初发表于一九一八年七月十五日《新青年》第五卷第一号，署名唐俟。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

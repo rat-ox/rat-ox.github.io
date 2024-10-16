@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-family: ToneOZ-Pinyin-Kai-Simplified, BeiAn-Kai, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: auto;
+    background-color: #f0f8ff;
+    color: #333;
+}
+h1 {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.description {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+ul {
+    text-align: left;
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 0px 0;
+}
+li.odd {
+    background-color: #f0f8ff;
+}
+li.even {
+    background-color: #f2f2f2;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:hover {
+    color: #fff;
+    background-color: #33a;
+    padding: 0px;
+    border-radius: 0px;
+}
+.number {
+    color: #99e;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.container {
+    max-width: 90%;
+    width: 90%;
+    text-align: justify;
+}
+.content {
+    column-count: 1;
+    column-gap: 0px;
+}
+
+.content p {
+    text-indent: 4em;
+    margin: 0 0 0em;
+}
+
+.column-option {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Additional styles to ensure consistent appearance for links inside .content */
+.content a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 0px 0;
+}
+
+.content a:hover {
+    text-decoration: underline;
+}
+
+.content p {
+    margin: 0;
+    padding: 0;
+}

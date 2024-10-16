@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map with Clocks</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        #map {
+            width: 100%;
+            height: 100%;
+            background: url('world-time-zone.jpg') no-repeat center center;
+            background-size: contain; /* Changed from cover to contain */
+            position: relative;
+        }
+        .city {
+            position: absolute;
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            transform: translate(-50%, -50%);
+        }
+        .clock {
+            color: yellow;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map">
+        <div class="city" id="hawaiian" style="top: 52vh; left: 2vw;">Hawaiian</div>
+        <div class="city" id="vancouver" style="top: 34vh; left: 12vw;">Vancouver</div>
+        <div class="city" id="new-york" style="top: 40vh; left: 26vw;">New York</div>
+        <div class="city" id="london" style="top: 33vh; left: 46vw;">London</div>
+        <div class="city" id="rome" style="top: 39vh; left: 50vw;">Rome</div>
+        <div class="city" id="cairo" style="top: 46vh; left: 55vw;">Cairo</div>
+        <div class="city" id="moscow" style="top: 30vh; left: 58vw;">Moscow</div>
+        <div class="city" id="new-delhi" style="top: 45vh; left: 69vw;">New Delhi</div>
+        <div class="city" id="beijing" style="top: 40vh; left: 79vw;">Beijing</div>
+        <div class="city" id="shanghai" style="top: 45vh; left: 80vw;">Shanghai</div>
+        <div class="city" id="manila" style="top: 55vh; left: 80vw;">Manila</div>
+        <div class="city" id="tokyo" style="top: 43vh; left: 85vw;">Tokyo</div>
+        <div class="city" id="sidney" style="top: 81vh; left: 88vw;">Sidney</div>
+        <!-- Add more cities as needed -->
+    </div>
+    <script>
+        const cities = [
+            {id: 'hawaiian', timezone: 'Pacific/Honolulu'},
+            {id: 'vancouver', timezone: 'America/Vancouver'},
+            {id: 'new-york', timezone: 'America/New_York'},
+            {id: 'london', timezone: 'Europe/London'},
+            {id: 'rome', timezone: 'Europe/Rome'},
+            {id: 'cairo', timezone: 'Africa/Cairo'},
+            {id: 'moscow', timezone: 'Europe/Moscow'},
+            {id: 'new-delhi', timezone: 'Asia/Kolkata'},
+            {id: 'beijing', timezone: 'Asia/Shanghai'},
+            {id: 'shanghai', timezone: 'Asia/Shanghai'},
+            {id: 'manila', timezone: 'Asia/Shanghai'},
+            {id: 'tokyo', timezone: 'Asia/Tokyo'},
+            {id: 'sidney', timezone: 'Australia/Sydney'},
+            // Add more cities and their respective timezones
+        ];
+
+        cities.forEach(city => {
+            const cityElement = document.getElementById(city.id);
+            cityElement.addEventListener('click', () => toggleClock(city));
+        });
+
+        function toggleClock(city) {
+            const cityElement = document.getElementById(city.id);
+            if (cityElement.querySelector('.clock')) {
+                cityElement.querySelector('.clock').remove();
+            } else {
+                const clock = document.createElement('div');
+                clock.className = 'clock';
+                updateClock(clock, city.timezone);
+                cityElement.appendChild(clock);
+            }
+        }
+
+        function updateClock(clockElement, timezone) {
+            const time = new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', timeZone: timezone });
+            clockElement.textContent = time;
+            setTimeout(() => updateClock(clockElement, timezone), 60000);
+        }
+    </script>
+</body>
+</html>

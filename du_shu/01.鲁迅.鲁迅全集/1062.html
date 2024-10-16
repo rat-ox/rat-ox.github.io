@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《从灵向肉和从肉向灵》译者附记〔1〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>《从灵向肉和从肉向灵》译者附记〔1〕</h1>
+            <p></p>
+<p>　　这也是《出了象牙之塔》里的一篇，主旨是专在指摘他最爱的母国――日本――的缺陷的。但我看除了开首这一节攻击旅馆制度和第三节攻击馈送仪节的和中国不甚相干外，其他却多半切中我们现在大家隐蔽着的痼疾，尤其是很自负的所谓精神文明。现在我就再来输入，作为从外国药房贩来的一帖泻药罢。</p>
+<p></p>
+<p>　　一九二四年十二月十四日，译者记。</p>
+<p></p>
+<p>　　※　　　　　　　 ※　　　　　　　　 ※</p>
+<p></p>
+<p>　　〔1〕本篇连同《从灵向肉和从肉向灵》的译文，最初发表于一九二五年一月九日《京报副刊》，后未印入单行本。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

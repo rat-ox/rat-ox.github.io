@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祭书神文</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>祭书神文</h1>
+            <p></p>
+<p>　　（１９０１年）</p>
+<p></p>
+<p>　　上章困敦之岁①，贾子祭诗之夕②，会稽戛剑生③等谨以寒泉冷华，祀书神长恩④，而缀之以俚词曰：今之夕兮除夕，香焰［纟因］□（“温”换绞丝旁）兮烛焰赤。钱神醉兮钱奴忙⑤，君独何为兮守残籍？华筵开兮腊酒香，更点点兮夜长。人喧呼兮入醉乡，谁荐君兮一觞。绝交阿堵兮尚剩残书⑥，把酒大呼兮君临我居。湘旗兮芸舆，挈脉望兮驾蠹鱼⑦。寒泉兮菊菹，狂诵《离骚》兮为君娱。君之来兮毋徐徐，君友漆妃兮管城侯⑧。向笔海而啸傲兮，倚文冢以淹留。不妨导脉望而登仙兮，引蠹鱼之来游。俗丁伧父兮为君仇，勿使履阈兮增君羞。若弗听兮止以吴钩，示之《丘》《索》兮棘其喉⑨。令管城脱颖以出兮，使彼□（缀换忄旁）□（缀换忄旁）以心忧。宁招书癖兮来诗囚⑩，君为我守兮乐未休。他年芹茂而樨香兮⑴，购异籍以相酬。</p>
+<p></p>
+<p>　　①《尔雅・释天》：“在庚曰上章”“在子曰困顿”，上章困顿，即庚子。</p>
+<p></p>
+<p>　　②元辛文房《唐才子传》卷５：“（贾岛）每至除夕，必取一岁所作置几上，焚香再拜，酹酒祝曰：‘此吾终年苦心也。’”</p>
+<p></p>
+<p>　　③戛剑生：鲁迅早年别号。</p>
+<p></p>
+<p>　　④长恩：明无名氏《致虚阁杂俎》：“司书鬼曰长恩，除夕呼其名而祭之，鼠不敢</p>
+<p></p>
+<p>　　啮，蠹虫不生。”</p>
+<p></p>
+<p>　　⑤钱神：《晋书・鲁褒传》：“褒伤时之贪鄙，乃隐姓名而著钱神论以刺之。”</p>
+<p></p>
+<p>　　⑥阿堵：《晋书・王衍传》：“衍口未尝言钱，妇令婢以钱绕床下，衍晨起，不得出，呼婢曰：‘举却阿堵物。’”</p>
+<p></p>
+<p>　　⑦脉望：唐段成式《酋阳杂俎》：“蠹虫三食神仙字，则化为此（脉望）。”</p>
+<p></p>
+<p>　　⑧漆妃：墨的别称。管城侯：韩愈《毛颖传》说秦始皇封笔为管城子。</p>
+<p></p>
+<p>　　⑨丘索：《左传》昭公十二年：“是能读《三坟》《五典》《八索》《九丘》。”</p>
+<p></p>
+<p>　　⑩诗囚：元好问《论诗绝句》论唐诗人孟郊（东野）诗：“东野穷愁死不休，高天</p>
+<p></p>
+<p>　　厚地一诗囚。”</p>
+<p></p>
+<p>　　⑴芹茂樨香：芹茂：苏辙《燕贡士诗》：“泮水生芹藻。”古代诸侯的学宫称泮宫，泮宫有水称泮水，因称考中秀才，即入学宫为入泮。樨香：木樨即桂花，古称登科为折桂，指考中举人。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

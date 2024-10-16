@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>题《淞隐续录》残本〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>题《淞隐续录》残本〔１〕</h1>
+            <p></p>
+<p>　　《淞隐续录》残本</p>
+<p></p>
+<p>　　自序云十二卷，然四卷以后即不著卷数，盖终亦未全也。</p>
+<p></p>
+<p>　　光绪癸巳排印本《淞滨琐话》亦十二卷，亦丁亥中元〔２〕后三日序，与此序仅数语不同，内容大致如一；惟十七则为此本所无，实一书尔。</p>
+<p></p>
+<p>　　九月三日上海寓楼记。</p>
+<p></p>
+<p>　　〔１〕　本篇据手稿编入，原题于《淞隐续录》重装本首册扉页，无标题、标点。末钤“旅隼”印。</p>
+<p></p>
+<p>　　《淞隐续录》，笔记小说，清代王韬著。原附《点石斋画报》印行，前四卷，每卷十则故事，另有十一则不分卷，张志瀛绘图。鲁迅购藏的画报本重装为二册。汇印本改题《淞滨琐话》，十二卷，共收故事六十八则，于光绪癸巳（１８９３）秋九月由淞隐庐出版。</p>
+<p></p>
+<p>　　〔２〕　丁亥　即一八八七年。中元，夏历七月十五日，俗称“中元节”。</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

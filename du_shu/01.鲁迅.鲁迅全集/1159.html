@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自嘲</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>自嘲</h1>
+            <p></p>
+<p>　　（１９３２年）　</p>
+<p></p>
+<p>　　运交华盖欲何求①？未敢翻身已碰头。</p>
+<p></p>
+<p>　　破帽遮颜过闹市，漏船载酒泛中流②。</p>
+<p></p>
+<p>　　横眉冷对千夫指，俯首甘为孺子牛③。</p>
+<p></p>
+<p>　　躲进小楼成一统，管他冬夏与春秋。</p>
+<p></p>
+<p>　　十二月</p>
+<p></p>
+<p>　　《鲁迅日记》１９３２年１０月１２日：“午后，为柳亚子书一条幅云：（略）。达夫赏饭，闲人打油，偷得半联，添成一律以请之。”按，１０月５日郁达夫在聚丰园宴请兄郁华，请鲁迅作陪。诗中“破”作“旧”，“漏”作“破”。后来鲁迅为日本杉本勇乘题此诗于扇面，“对”作“看”。</p>
+<p></p>
+<p>　　①鲁迅《华盖集・题记》：“这运（指华盖运），在和尚是好运：顶有华盖，自然是成佛作祖之兆，但俗人可不行，华盖在上，就要给罩住了，只好碰钉子。”</p>
+<p></p>
+<p>　　②《吴子・治兵》：“如坐漏船之中。”《晋书・华卓传》，华卓说：“得酒满数百斛船，……拍浮酒船中，便足了一生矣。”</p>
+<p></p>
+<p>　　③《左传》哀公六年：“鲍子曰：‘汝忘君（齐景公）之为儒子牛而折其齿乎？’”洪亮吉《北江诗话》卷一引钱季重作的柱帖：“酒酣或化庄生蝶，饭饱甘为儒子牛。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

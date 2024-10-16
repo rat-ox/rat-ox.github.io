@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>二十九、要怎么样才能够在世界里　而又不属于它？</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>二十九、要怎么样才能够在世界里　而又不属于它？</h1>
+            <p>　　静心者的问题通常是：“要怎么样才能够在世界里而又不属于它？”自从我离开社区一段时间而搬回到世界，我觉得好像是外来的，跟他们不一样，不属于它？</p>
+<p>那个问题似乎是：“要如何处于世界里？”</p>
+<p>那个问题仍然是在世界里而不属于它，只是在世界里并不会改变第一个情况。</p>
+<p>第一个情况让你处于世界里，但是并不世俗。你觉得好像是外来的，这样非常好，它并没有什么不对，你一定会觉得这样，你必须存在的这个世界并不是你可以跟人们同步、跟他们的观念和他们的行为同步的世界。这个世界并不是正确的世界――我是说人的世界。你想要在它里面，成为它的一部分吗？那么你必须是基督教社会里的基督徒，你必须上教堂，你必须相信《圣经》，你想要以这种方式处于世界上吗？</p>
+<p>那么一切你以前所做的都是一种纯粹的浪费时间。</p>
+<p>处于这个世界只是意味着你必须找一份工作做，你必须赚取你的面包，你必须和一些跟你思想不同的人生活在一起，你必须在一些外来的人当中生活，很自然地，你会觉得好像是外来的，但那是一件值得高兴的事。</p>
+<p>我并不是把你送进世界去迷失的，我把你送进世界是要你不管世界，而仍然保持你自己。</p>
+<p>那就是第一段描述的意义：在世界里而又不属于它，它仍然保持不变，它非常基本，所以它将保持不变。</p>
+<p></p>
+<p>摘自《超出心理学之外》</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>

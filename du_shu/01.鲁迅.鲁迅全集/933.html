@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>庚子送灶即事〔１〕</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column-option">
+            <label for="columns">选择多栏阅读：</label>
+            <select id="columns" onchange="changeColumns()">
+                <option value="1">单栏</option>
+                <option value="2">双栏</option>
+                <option value="3" selected>三栏</option>
+                <option value="4">四栏</option>
+            </select>
+        </div>
+        <div class="content" id="content">
+            <h1>庚子送灶即事〔１〕</h1>
+            <p></p>
+<p>　　只鸡胶牙糖，典衣供瓣香。</p>
+<p></p>
+<p>　　家中无长物，岂独少黄羊！〔２〕</p>
+<p></p>
+<p>　　〔１〕　本篇录自周作人日记，写于一九○一年二月，署名戛剑生。</p>
+<p></p>
+<p>　　旧俗，以夏历十二月二十四日为灶神升天的日子，在这一天或前一天祭送灶神，称为“送灶”。</p>
+<p></p>
+<p>　　〔２〕　黄羊　《后汉书・阴识传》：“宣帝时阴子方者，至孝有仁恩。腊日晨炊而灶神形见，子方再拜受庆。家有黄羊，因以祀之。自是已后，暴至巨富，……故后常以腊日祀灶而荐黄羊焉。”《康熙会稽志》：绍俗，“祭灶品用糖糕、时果或羊首，取黄羊祭灶之义。”</p>
+        </div>
+    </div>
+    <script>
+        function changeColumns() {
+            var select = document.getElementById("columns");
+            var content = document.getElementById("content");
+            content.style.columnCount = select.value;
+        }
+    </script>
+</body>
+</html>
